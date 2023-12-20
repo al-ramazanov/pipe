@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Главная</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20231220115255" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20231220115255"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231220115255" />
+</head>
+
+<body>
+	<div class="wrapper">
+</body>
+
+</html>
+<header class="header">
+	<div class="header-top">
+		<div class="header__container">
+			<div class="header-top__city">
+				<button class="header-top__city-btn">
+					<svg class="location">
+						<use xlink:href='images/svg/icons.svg#location-ico'></use>
+					</svg>
+					<span>Екатеринбург</span>
+					<svg class="arrow">
+						<use xlink:href='images/svg/icons.svg#arrow-ico'></use>
+					</svg>
+				</button>
+			</div>
+			<nav class="header-top__nav">
+				<a href="#" class="header-top__nav-link header-top__nav-link--submenu">
+					Услуги
+					<svg class="arrow">
+						<use xlink:href='images/svg/icons.svg#arrow-ico'></use>
+					</svg>
+				</a>
+				<a href="#" class="header-top__nav-link">
+					О компании
+				</a>
+				<a href="#" class="header-top__nav-link">
+					Доставка и оплата
+				</a>
+				<a href="#" class="header-top__nav-link">
+					Новости
+				</a>
+				<a href="#" class="header-top__nav-link">
+					Контакты
+				</a>
+			</nav>
+			<a href="tel:+79632752223" class="header-top__tel--mobile"> +7 (963) 275 22 23</a>
+		</div>
+	</div>
+	<div class="header-bottom">
+		<div class="header__container">
+
+			<a href="main.html" class="header__logo">
+				<img src="images/logo.svg" alt="logo">
+			</a>
+			<div class="header-bottom__action">
+				<button class="header-bottom__catalog main-btn">
+					<svg>
+						<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
+					</svg>
+					Каталог
+				</button>
+				<form class="header__search-form">
+					<input type="search" class="header__search" placeholder="Искать например:труба 25 см">
+					<button type="submit" class="header__search-form-btn">
+						<img src="images/search.svg" alt="">
+					</button>
+				</form>
+			</div>
+			<div class="header-bottom__contacts">
+				<a href="mailto:info+1102018@pipe-ppu.ru" class="header-bottom__contacts-item">
+					info+1102018@pipe-ppu.ru
+					<span>отвечаем в течение 1 часа</span>
+				</a>
+
+				<div class="header-bottom__contacts-item --item">
+					<a href="tel:+74994601339">8 (499) 460-13-39</a>
+					<span><a href="#" class="accent">заказать обратный звонок</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-bottom-mob">
+		<div class="header-bottom-mob__container">
+
+			<button class="header-bottom__catalog">
+				<svg>
+					<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
+				</svg>
+				Каталог
+			</button>
+			<button class="mobile-cart js-cart active">
+				<span class="cart-counter">123 шт</span>
+				<span>
+					<svg>
+						<use xlink:href='images/svg/icons.svg#cart-ico-mob'></use>
+					</svg>
+				</span>
+			</button>
+
+		</div>
+
+	</div>
+</header>
+<main class="main">
+	<div class="intro">
+	<div class="intro__container">
+		<button class="intro__cart js-cart">
+			<span>
+				<svg>
+					<use xlink:href='images/svg/icons.svg#cart-ico'></use>
+				</svg>
+			</span>
+			корзина
+		</button>
+		<div class="intro__wrapper">
+			<button class="intro-swiper__btn prev">
+				<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M7.08203 5.99999C7.08203 6.1772 7.00148 6.3448 6.8631 6.4555L1.02977 11.1222C0.7782 11.3234 0.411113 11.2826 0.209857 11.0311C0.00860167 10.7795 0.0493894 10.4124 0.300959 10.2111L5.56491 5.99999L0.300959 1.78883C0.0493894 1.58758 0.00860167 1.22049 0.209857 0.968919C0.411113 0.717349 0.7782 0.676562 1.02977 0.877817L6.8631 5.54448C7.00148 5.65518 7.08203 5.82278 7.08203 5.99999Z"
+						fill="url(#paint0_linear_832_11538)" />
+					<defs>
+						<linearGradient id="paint0_linear_832_11538" x1="7.08203" y1="5.99999" x2="0.0820093" y2="5.99999"
+							gradientUnits="userSpaceOnUse">
+							<stop stop-color="#FE6A2D" />
+							<stop offset="1" stop-color="#FC4738" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</button>
+			<div class="intro__category-slider swiper intro-swiper">
+				<div class="intro__category-wrapper swiper-wrapper">
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Изоляция трубопроводов
+						</a>
+					</div>
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Нефтегазовое оборудование и материалы
+						</a>
+					</div>
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Нефтегазовое оборудование и материалы
+						</a>
+					</div>
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Нефтегазовое оборудование и материалы
+						</a>
+					</div>
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Опоры трубопроводов
+						</a>
+					</div>
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Системы вентиляции
+						</a>
+					</div>
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Трубопроводная арматура
+						</a>
+					</div>
+					<div class="intro__slide swiper-slide">
+						<a href="#">
+							Трубы и комплектующие
+						</a>
+					</div>
+				</div>
+			</div>
+			<button class="intro-swiper__btn next">
+				<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M7.08203 5.99999C7.08203 6.1772 7.00148 6.3448 6.8631 6.4555L1.02977 11.1222C0.7782 11.3234 0.411113 11.2826 0.209857 11.0311C0.00860167 10.7795 0.0493894 10.4124 0.300959 10.2111L5.56491 5.99999L0.300959 1.78883C0.0493894 1.58758 0.00860167 1.22049 0.209857 0.968919C0.411113 0.717349 0.7782 0.676562 1.02977 0.877817L6.8631 5.54448C7.00148 5.65518 7.08203 5.82278 7.08203 5.99999Z"
+						fill="url(#paint0_linear_832_11538)" />
+					<defs>
+						<linearGradient id="paint0_linear_832_11538" x1="7.08203" y1="5.99999" x2="0.0820093" y2="5.99999"
+							gradientUnits="userSpaceOnUse">
+							<stop stop-color="#FE6A2D" />
+							<stop offset="1" stop-color="#FC4738" />
+						</linearGradient>
+					</defs>
+				</svg>
+			</button>
+		</div>
+
+		<div class="intro__text">
+			<h1 class="intro__title">
+				Оптовые поставки изоляции, труб<br>и комплектующих по РФ и СНГ
+			</h1>
+			<p class="intro__subtitle">
+				Оставьте заявку, и мы перезвоним вам <span class="orange-accent">с готовым</span> предложением
+			</p>
+			<button class="intro__link main-btn">
+				Оставить заявку на расчет
+			</button>
+		</div>
+		<div class="intro__benefits">
+			<div class="intro__benefits-items">
+				<div class="intro__benefits-item">
+					<img src="images/benefits-1.svg" alt="#">
+					<p class="intro__benefits-item-text">
+						1 час<br>Срок обработки<br>заявки
+					</p>
+				</div>
+				<div class="intro__benefits-item">
+					<img src="images/benefits-2.svg" alt="#">
+					<p class="intro__benefits-item-text">
+						1 день<br>Минимальный срок<br>доставки
+					</p>
+				</div>
+				<div class="intro__benefits-item">
+					<img src="images/benefits-3.svg" alt="#">
+					<p class="intro__benefits-item-text">
+						10 лет<br>Занимаемся ППУ<br>изоляцией
+					</p>
+				</div>
+				<div class="intro__benefits-item">
+					<img src="images/benefits-4.svg" alt="#">
+					<p class="intro__benefits-item-text">
+						1000 кв.м<br>Цех заливки ППУ<br>и механообработки
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<section class="products">
+	<div class="products__container">
+		<div class="section-header">
+	<h2 class="section-header__title">
+		Наша продукция
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		Перейти в каталог
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+
+		<div class="products__wrapper">
+			<div class="products__items">
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-1.svg" alt="Трубы и фитинги ППУ" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы и фитинги ППУ
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы ПНД ППУ</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы с греющим кабелем</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы Твин</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-2.svg" alt="Трубы и фитинги ППУ" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы и фитинги ППУ
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы ПНД ППУ</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы с греющим кабелем</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы Твин</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-3.svg" alt="Трубы оболочки" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы оболочки
+						</h3>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-4.svg" alt="Трубы ВУС/УС" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы ВУС/УС
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Трубы стальные в 2-х слойной ВУС изоляции
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Трубы стальные в 3-х слойной ВУС изоляции
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-5.svg" alt="Подвески трубопроводов" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Подвески трубопроводов
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ГОСТ 16127-78
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Серия 4.903-10 вып. 6
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Серия 5.903-13 вып. 6-95
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-6.svg" alt="Пружинные блоки" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Пружинные блоки
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ОСТ 34-10-743-93
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ОСТ 34-10-744-93
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ОСТ 34-10-745-93
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-7.svg" alt="Кожухи фланцевые КЗФ" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Кожухи фланцевые КЗФ
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Кожухи защитные КЗФ
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Кожухи нержавеющие КЗФ
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Кожухи фланцевые КЗС
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-8.svg" alt="Закладные детали" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Закладные детали
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Закладные детали по серии 1.400-15
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Закладные детали по серии 3.400 - 6/76
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Закладные детали - серия 1.400-6/76 вып...
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+			</div>
+
+			<div class="product-card__btns">
+				<button type="button" class="product-card__more main-btn">
+					Смотреть все категории
+				</button>
+				<button class="product-card__away secondary-btn">
+					Перейти в каталог
+				</button>
+			</div>
+
+		</div>
+	</div>
+</section>
+	<div class="banner">
+	<div class="banner__container">
+		<div class="banner__body">
+			<div class="banner__text">
+				Прямые поставки труб в изоляции на ваш объект
+			</div>
+			<button class="banner__btn main-btn">
+				Заказать
+			</button>
+		</div>
+	</div>
+</div>
+	<div class="services">
+	<div class="services__container">
+		<div class="section-header">
+	<h2 class="section-header__title">
+		Наши услуги
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		Перейти к услугам
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+
+		<div class="services__body">
+			<div class="services__items services__items--desktop">
+				<div class="swiper services-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="services__wrapper">
+								<div class="services-card__decor">
+									<svg class="triangle-big" xmlns="http://www.w3.org/2000/svg" width="119" height="119"
+										viewBox="0 0 119 119" fill="none">
+										<path
+											d="M109.964 8.53553L8.53553 109.964C5.38571 113.114 7.61654 118.5 12.0711 118.5H113.5C116.261 118.5 118.5 116.261 118.5 113.5V12.0711C118.5 7.61654 113.114 5.3857 109.964 8.53553Z"
+											fill="url(#paint0_linear_211_3567)" />
+										<defs>
+											<linearGradient id="paint0_linear_211_3567" x1="59.25" y1="0" x2="59.25" y2="118.5"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FE6A2D" />
+												<stop offset="1" stop-color="#FC4738" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<svg class="arrow">
+										<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+									</svg>
+								</div>
+								<div class="services__item services-card big">
+									<img src="images/services-1.svg" alt="#" class="services-card__img">
+									<p class="services-card__text">
+										Производство дымоходов квадратного и круглого сечения
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="services__cards-wrap">
+								<div class="services__wrapper">
+									<div class="services-card__decor">
+										<svg class="triangle-big" xmlns="http://www.w3.org/2000/svg" width="119" height="119"
+											viewBox="0 0 119 119" fill="none">
+											<path
+												d="M109.964 8.53553L8.53553 109.964C5.38571 113.114 7.61654 118.5 12.0711 118.5H113.5C116.261 118.5 118.5 116.261 118.5 113.5V12.0711C118.5 7.61654 113.114 5.3857 109.964 8.53553Z"
+												fill="url(#paint0_linear_211_3567)" />
+											<defs>
+												<linearGradient id="paint0_linear_211_3567" x1="59.25" y1="0" x2="59.25" y2="118.5"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#FE6A2D" />
+													<stop offset="1" stop-color="#FC4738" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg class="arrow">
+											<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+										</svg>
+									</div>
+									<div class="services__item services-card small">
+										<img src="images/services-2.svg" alt="#" class="services-card__img">
+										<p class="services-card__text">
+											Анкерные тягипод заказ
+									</div>
+								</div>
+								<div class="services__wrapper">
+									<div class="services-card__decor">
+										<svg class="triangle-big" xmlns="http://www.w3.org/2000/svg" width="119" height="119"
+											viewBox="0 0 119 119" fill="none">
+											<path
+												d="M109.964 8.53553L8.53553 109.964C5.38571 113.114 7.61654 118.5 12.0711 118.5H113.5C116.261 118.5 118.5 116.261 118.5 113.5V12.0711C118.5 7.61654 113.114 5.3857 109.964 8.53553Z"
+												fill="url(#paint0_linear_211_3567)" />
+											<defs>
+												<linearGradient id="paint0_linear_211_3567" x1="59.25" y1="0" x2="59.25" y2="118.5"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#FE6A2D" />
+													<stop offset="1" stop-color="#FC4738" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg class="arrow">
+											<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+										</svg>
+									</div>
+									<div class="services__item services-card small">
+										<img src="images/services-3.svg" alt="#" class="services-card__img centered">
+										<p class="services-card__text small-width">
+											Изделия по чертежам заказчика
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="services__cards-wrap">
+								<div class="services__wrapper">
+									<div class="services-card__decor">
+										<svg class="triangle-big" xmlns="http://www.w3.org/2000/svg" width="119" height="119"
+											viewBox="0 0 119 119" fill="none">
+											<path
+												d="M109.964 8.53553L8.53553 109.964C5.38571 113.114 7.61654 118.5 12.0711 118.5H113.5C116.261 118.5 118.5 116.261 118.5 113.5V12.0711C118.5 7.61654 113.114 5.3857 109.964 8.53553Z"
+												fill="url(#paint0_linear_211_3567)" />
+											<defs>
+												<linearGradient id="paint0_linear_211_3567" x1="59.25" y1="0" x2="59.25" y2="118.5"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#FE6A2D" />
+													<stop offset="1" stop-color="#FC4738" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg class="arrow">
+											<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+										</svg>
+									</div>
+									<div class="services__item services-card small">
+										<img src="images/services-4.svg" alt="#" class="services-card__img">
+										<p class="services-card__text">
+											Воздуховоды под заказ
+									</div>
+								</div>
+								<div class="services__wrapper">
+									<div class="services-card__decor">
+										<svg class="triangle-big" xmlns="http://www.w3.org/2000/svg" width="119" height="119"
+											viewBox="0 0 119 119" fill="none">
+											<path
+												d="M109.964 8.53553L8.53553 109.964C5.38571 113.114 7.61654 118.5 12.0711 118.5H113.5C116.261 118.5 118.5 116.261 118.5 113.5V12.0711C118.5 7.61654 113.114 5.3857 109.964 8.53553Z"
+												fill="url(#paint0_linear_211_3567)" />
+											<defs>
+												<linearGradient id="paint0_linear_211_3567" x1="59.25" y1="0" x2="59.25" y2="118.5"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#FE6A2D" />
+													<stop offset="1" stop-color="#FC4738" />
+												</linearGradient>
+											</defs>
+										</svg>
+										<svg class="arrow">
+											<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+										</svg>
+									</div>
+									<div class="services__item services-card small">
+										<img src="images/services-5.svg" alt="#" class="services-card__img centered">
+										<p class="services-card__text">
+											Производство опор по чертежам
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<div class="services__items services__items--mobile">
+				<div class="swiper services-swiper-mob">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="services__wrapper">
+								<div class="services-card__decor">
+									<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="none">
+										<path
+											d="M61.9645 8.53553L8.53553 61.9645C5.38571 65.1143 7.61654 70.5 12.0711 70.5H65.5C68.2614 70.5 70.5 68.2614 70.5 65.5V12.0711C70.5 7.61654 65.1143 5.3857 61.9645 8.53553Z"
+											fill="url(#paint0_linear_551_12055)" />
+										<defs>
+											<linearGradient id="paint0_linear_551_12055" x1="35.25" y1="0" x2="35.25" y2="70.5"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FE6A2D" />
+												<stop offset="1" stop-color="#FC4738" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<svg class="arrow">
+										<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+									</svg>
+								</div>
+								<div class="services__item services-card big">
+									<img src="images/services-1.svg" alt="#" class="services-card__img">
+									<p class="services-card__text">
+										Производство дымоходов квадратного и круглого сечения
+									</p>
+								</div>
+								<p class="services-card__text--mob">
+									Производство дымоходов квадратного и круглого сечения
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="services__wrapper">
+								<div class="services-card__decor">
+									<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="none">
+										<path
+											d="M61.9645 8.53553L8.53553 61.9645C5.38571 65.1143 7.61654 70.5 12.0711 70.5H65.5C68.2614 70.5 70.5 68.2614 70.5 65.5V12.0711C70.5 7.61654 65.1143 5.3857 61.9645 8.53553Z"
+											fill="url(#paint0_linear_551_12055)" />
+										<defs>
+											<linearGradient id="paint0_linear_551_12055" x1="35.25" y1="0" x2="35.25" y2="70.5"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FE6A2D" />
+												<stop offset="1" stop-color="#FC4738" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<svg class="arrow">
+										<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+									</svg>
+								</div>
+								<div class="services__item services-card small">
+									<img src="images/services-2.svg" alt="#" class="services-card__img">
+									<p class="services-card__text">
+										Анкерные тягипод заказ
+								</div>
+								<p class="services-card__text--mob">
+									Анкерные тягипод заказ
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="services__wrapper">
+								<div class="services-card__decor">
+									<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="none">
+										<path
+											d="M61.9645 8.53553L8.53553 61.9645C5.38571 65.1143 7.61654 70.5 12.0711 70.5H65.5C68.2614 70.5 70.5 68.2614 70.5 65.5V12.0711C70.5 7.61654 65.1143 5.3857 61.9645 8.53553Z"
+											fill="url(#paint0_linear_551_12055)" />
+										<defs>
+											<linearGradient id="paint0_linear_551_12055" x1="35.25" y1="0" x2="35.25" y2="70.5"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FE6A2D" />
+												<stop offset="1" stop-color="#FC4738" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<svg class="arrow">
+										<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+									</svg>
+								</div>
+								<div class="services__item services-card small">
+									<img src="images/services-3.svg" alt="#" class="services-card__img centered">
+									<p class="services-card__text small-width">
+										Изделия по чертежам заказчика
+								</div>
+								<p class="services-card__text--mob">
+									Изделия по чертежам заказчика
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="services__wrapper">
+								<div class="services-card__decor">
+									<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="none">
+										<path
+											d="M61.9645 8.53553L8.53553 61.9645C5.38571 65.1143 7.61654 70.5 12.0711 70.5H65.5C68.2614 70.5 70.5 68.2614 70.5 65.5V12.0711C70.5 7.61654 65.1143 5.3857 61.9645 8.53553Z"
+											fill="url(#paint0_linear_551_12055)" />
+										<defs>
+											<linearGradient id="paint0_linear_551_12055" x1="35.25" y1="0" x2="35.25" y2="70.5"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FE6A2D" />
+												<stop offset="1" stop-color="#FC4738" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<svg class="arrow">
+										<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+									</svg>
+								</div>
+								<div class="services__item services-card small">
+									<img src="images/services-4.svg" alt="#" class="services-card__img">
+									<p class="services-card__text">
+										Воздуховоды под заказ
+								</div>
+								<p class="services-card__text--mob">
+									Воздуховоды под заказ
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="services__wrapper">
+								<div class="services-card__decor">
+									<svg xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71" fill="none">
+										<path
+											d="M61.9645 8.53553L8.53553 61.9645C5.38571 65.1143 7.61654 70.5 12.0711 70.5H65.5C68.2614 70.5 70.5 68.2614 70.5 65.5V12.0711C70.5 7.61654 65.1143 5.3857 61.9645 8.53553Z"
+											fill="url(#paint0_linear_551_12055)" />
+										<defs>
+											<linearGradient id="paint0_linear_551_12055" x1="35.25" y1="0" x2="35.25" y2="70.5"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#FE6A2D" />
+												<stop offset="1" stop-color="#FC4738" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<svg class="arrow">
+										<use xlink:href='images/svg/icons.svg#card-arrow'></use>
+									</svg>
+								</div>
+								<div class="services__item services-card small">
+									<img src="images/services-5.svg" alt="#" class="services-card__img centered">
+									<p class="services-card__text">
+										Производство опор по чертежам
+								</div>
+								<p class="services-card__text--mob">
+									Производство опор по чертежам
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="services__action">
+				<h3 class="services__action-text">
+					Основные услуги - это производство, деталей из металла, механообработка и тд.?
+				</h3>
+				<a href="#" class="services__action-link main-btn">
+					<svg>
+						<use xlink:href='images/svg/icons.svg#shipping'></use>
+					</svg>
+					Перейти к отгрузкам
+				</a>
+			</div>
+			<div class="services__action-mob">
+				<a href="#" class="services__action-mob-btn">
+					Перейти к услугам
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+	<section class="about">
+	<div class="about__container">
+		<div class="section-header">
+	<h2 class="section-header__title">
+		О компании
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+
+		<div class="about__items">
+			<div class="about__card">
+				<h3 class="about__card-title">
+					Смирнов Александр Валерьевич
+				</h3>
+				<p class="about__card-subtitle">
+					гениральный директор
+				</p>
+				<img src="images/director-1.png" alt="Смирнов Александр Валерьевич" class="about__card-img">
+				<img src="images/signature.svg" alt="#" class="about__card-decor">
+			</div>
+			<div class="about__info">
+				<div class="about__info-decor">
+					<img src="images/decor.svg" alt="#" class="decor decor-1">
+					<img src="images/decor.svg" alt="#" class="decor decor-2">
+				</div>
+				<ul class="about__info-list">
+					<li class="about__info-item">
+						<div class="about__info-text odd">
+							<h3 class="about__info-title">
+								2010
+								<span>год</span>
+							</h3>
+							<p class="about__info-subtitle">
+								создание компании по поставкам труби опор в изоляции
+							</p>
+						</div>
+					</li>
+					<li class="about__info-item">
+						<div class="about__info-text">
+							<h3 class="about__info-title">
+								2015
+								<span>год</span>
+							</h3>
+							<p class="about__info-subtitle">
+								создание компании по поставкам труби опор в изоляции
+							</p>
+						</div>
+					</li>
+					<li class="about__info-item">
+						<div class="about__info-text odd">
+							<h3 class="about__info-title">
+								2017
+								<span>год</span>
+							</h3>
+							<p class="about__info-subtitle">
+								число постоянных клиентов достигло
+								5 000 в год
+							</p>
+						</div>
+					</li>
+					<li class="about__info-item">
+						<div class="about__info-text">
+							<h3 class="about__info-title">
+								2020
+								<span>год</span>
+							</h3>
+							<p class="about__info-subtitle">
+								запуск структурного подразделения предприятия, специализирующееся на обработке различных видов металла с
+								помощью механических методов
+							</p>
+						</div>
+					</li>
+					<li class="about__info-item">
+						<div class="about__info-text odd">
+							<h3 class="about__info-title">
+								2023
+								<span>год</span>
+							</h3>
+							<p class="about__info-subtitle">
+								масштабирование компании в 7 регионов РФ и появление подразделений в Казахстане и Узбекистане
+							</p>
+						</div>
+					</li>
+					<li class="about__info-item">
+						<a href="#" class="secondary-btn">
+							О компании
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="benefits">
+	<div class="benefits__container">
+		<div class="section-header">
+	<h2 class="section-header__title">
+		Почему с нами удобно и выгодно
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		@@link
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+		<div class="benefits__body">
+			<ul class="benefits__list">
+				<li class="benefits__item">
+					<div class="benefits__card benefits-card">
+						<img src="images/cart-check.png" alt="#" class="benefits-card__img">
+						<div class="benefits-card__text">
+							<h3 class="benefits-card__title">
+								Актуальные новинки
+								на нашем сайте. 
+							</h3>
+							<p class="benefits-card__subtitle">
+								Каталог сайта постоянно обновляется, запрос по наличию продукцииотправляйте на
+								<a href="mailto:info@pipe-ppu.ru">info@pipe-ppu.ru</a>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<div class="benefits__card benefits-card">
+						<img src="images/receipt-check.png" alt="#" class="benefits-card__img">
+						<div class="benefits-card__text">
+							<h3 class="benefits-card__title">
+								Изготовление деталей по вашему чертежу.
+							</h3>
+							<p class="benefits-card__subtitle">
+								А если не можете найти нужную спецификацию - изготовим детальдля вас
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<div class="benefits__card benefits-card">
+						<img src="images/shipping.png" alt="#" class="benefits-card__img">
+						<div class="benefits-card__text">
+							<h3 class="benefits-card__title">
+								Доставка в любую точку России.
+							</h3>
+							<p class="benefits-card__subtitle">
+								Мы доставляем нашу продукцию даже в труднодоступные районы крайнего севера, где требуется особая защита
+								от
+								холода.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="benefits__item">
+					<div class="benefits__card benefits-card">
+						<img src="images/approved-file.png" alt="#" class="benefits-card__img">
+						<div class="benefits-card__text">
+							<h3 class="benefits-card__title">
+								Без минимального заказа
+							</h3>
+							<p class="benefits-card__subtitle">
+								Мы не ограничиваем наших клиентов минимальной суммой закупки, работаем с крупным и мелким оптом
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="benefits__sertif">
+				<div class="swiper benefits-swiper">
+					<div class="benefits__sertif-items swiper-wrapper">
+						<div class="benefits__setif-pic swiper-slide">
+							<img src="images/sertif.png" alt="#" class="sertif-pic big">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/sertif-2.png" alt="#" class="sertif-pic small">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/sertif-2.png" alt="#" class="sertif-pic small">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/sertif-2.png" alt="#" class="sertif-pic small">
+						</div>
+						<div class="swiper-slide">
+							<img src="images/sertif-2.png" alt="#" class="sertif-pic small">
+						</div>
+					</div>
+					<div class="swiper-pagination benefits-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="team">
+	<div class="team__container">
+		<div class="section-header">
+	<h2 class="section-header__title">
+		Наша команда специалистов
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+		<div class="team__items">
+			<div class="team__card team-card big">
+				<div class="team-card__pic big">
+					<img src="images/team-1.png" alt="Усманов Максим">
+				</div>
+				<div class="team-card__text">
+					<h3 class="team-card__name">Усманов Максим</h3>
+					<p class="team-card__position">
+						Руководитель отдела продаж
+					</p>
+				</div>
+			</div>
+			<div class="team__card team-card">
+				<div class="team-card__pic">
+					<img src="images/team-2.png" alt="Воробьев Игорь">
+				</div>
+				<div class="team-card__text">
+					<h3 class="team-card__name">Воробьев Игорь</h3>
+					<p class="team-card__position">
+						Специалист отдела продаж
+					</p>
+				</div>
+			</div>
+			<div class="team__card team-card">
+				<div class="team-card__pic">
+					<img src="images/team-3.png" alt="Корякин Владислав">
+				</div>
+				<div class="team-card__text">
+					<h3 class="team-card__name">Корякин Владислав</h3>
+					<p class="team-card__position">
+						Специалист отдела продаж
+					</p>
+				</div>
+			</div>
+			<div class="team__card team-card">
+				<div class="team-card__pic">
+					<img src="images/team-4.png" alt="Мерзлякова Александра">
+				</div>
+				<div class="team-card__text">
+					<h3 class="team-card__name">Мерзлякова Александра</h3>
+					<p class="team-card__position">
+						Специалист отдела продаж
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<section class="partners">
+	<div class="partners__container">
+		<div class="section-header">
+	<h2 class="section-header__title">
+		Наши клиенты и партнеры
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+		<div class="partners__items">
+			<ul class="partners__list-row">
+				<li class="partners__item">
+					<img src="images/partners-1.png" alt="Сухой">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-2.png" alt="Роскосмос">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-3.png" alt="Газпром">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-4.png" alt="Оск">
+				</li>
+			</ul>
+			<ul class="partners__list-row">
+				<li class="partners__item">
+					<img src="images/partners-5.png" alt="Сухой">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-6.png" alt="Роскосмос">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-7.png" alt="Газпром">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-8.png" alt="Оск">
+				</li>
+			</ul>
+			<ul class="partners__list-row">
+				<li class="partners__item">
+					<img src="images/partners-9.png" alt="Сухой" title="Сухой">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-10.png" alt="Роскосмос">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-11.png" alt="Газпром">
+				</li>
+				<li class="partners__item">
+					<img src="images/partners-12.png" alt="Оск">
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</section>
+	<section class="news">
+	<div class="news__container">
+		<div class="section-header">
+	<h2 class="section-header__title">
+		Новости компании
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		Смотреть все новости
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+		<div class="swiper news-swiper">
+			<div class="news__items swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="news__card">
+						<div class="news__card-date">
+							<span class="news__card-date-day">22</span>
+							<span class="news__card-date-month">октября</span>
+							<span class="news__card-date-year">2023</span>
+						</div>
+						<div class="news__card-pic">
+							<img src="images/news-1.jpg" alt="#">
+						</div>
+						<div class="news__card-footer">
+							<p class="news__card-text">Доставка продукции теперь и по СНГ бесплатно при заказе от...</p>
+							<a href="#" class="product-card__arrow">
+								<svg>
+									<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="news__card">
+						<div class="news__card-date">
+							<span class="news__card-date-day">26</span>
+							<span class="news__card-date-month">октября</span>
+							<span class="news__card-date-year">2023</span>
+						</div>
+						<div class="news__card-pic">
+							<img src="images/news-2.jpg" alt="#">
+						</div>
+						<div class="news__card-footer">
+							<p class="news__card-text">Доставка продукции теперь и по СНГ бесплатно при заказе от...</p>
+							<a href="#" class="product-card__arrow">
+								<svg>
+									<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="news__card">
+						<div class="news__card-date">
+							<span class="news__card-date-day">24</span>
+							<span class="news__card-date-month">октября</span>
+							<span class="news__card-date-year">2023</span>
+						</div>
+						<div class="news__card-pic">
+							<img src="images/news-3.jpg" alt="#">
+						</div>
+						<div class="news__card-footer">
+							<p class="news__card-text">Доставка продукции теперь и по СНГ бесплатно при заказе от...</p>
+							<a href="#" class="product-card__arrow">
+								<svg>
+									<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="news__card">
+						<div class="news__card-date">
+							<span class="news__card-date-day">20</span>
+							<span class="news__card-date-month">октября</span>
+							<span class="news__card-date-year">2023</span>
+						</div>
+						<div class="news__card-pic">
+							<img src="images/news-4.jpg" alt="#">
+						</div>
+						<div class="news__card-footer">
+							<p class="news__card-text">Доставка продукции теперь и по СНГ бесплатно при заказе от...</p>
+							<a href="#" class="product-card__arrow">
+								<svg>
+									<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="news__card">
+						<div class="news__card-date">
+							<span class="news__card-date-day">20</span>
+							<span class="news__card-date-month">октября</span>
+							<span class="news__card-date-year">2023</span>
+						</div>
+						<div class="news__card-pic">
+							<img src="images/news-5.jpg" alt="#">
+						</div>
+						<div class="news__card-footer">
+							<p class="news__card-text">Доставка продукции теперь и по СНГ бесплатно при заказе от...</p>
+							<a href="#" class="product-card__arrow">
+								<svg>
+									<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="news__card">
+						<div class="news__card-date">
+							<span class="news__card-date-day">20</span>
+							<span class="news__card-date-month">октября</span>
+							<span class="news__card-date-year">2023</span>
+						</div>
+						<div class="news__card-pic">
+							<img src="images/news-6.jpg" alt="#">
+						</div>
+						<div class="news__card-footer">
+							<p class="news__card-text">Доставка продукции теперь и по СНГ бесплатно при заказе от...</p>
+							<a href="#" class="product-card__arrow">
+								<svg>
+									<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="news-pagination swiper-pagination"></div>
+		</div>
+		<div class="services__action-mob">
+			<a href="#" class="services__action-mob-btn">
+				Смотреть все
+			</a>
+		</div>
+	</div>
+</section>
+	<section class="article">
+	<div class="article__container">
+		<div class="article__body">
+			<h2 class="article__title">
+				Изоляционные материалы, опоры, анкеры
+			</h2>
+			<div class="article__text">
+				<p>
+					Наша компания один из ведущих поставщиков металлопроката для, энергетической, химической, других отраслей
+					промышленности. На нашем сайте представлен прокат по рыночным ценам:
+				</p>
+
+				<ul class="article__text-list">
+					<li class="article__text-item">Опоры трубопроводов разных типов, размеров;</li>
+					<li class="article__text-item">
+						Изоляция труб и фасонных частей ППУ, ППМ, ВУС, УС с защитными оболочками;
+					</li>
+					<li class="article__text-item">
+						Системы вентиляции для промышленных, гражданских объектов;
+					</li>
+				</ul>
+				<p class="mob-hidden">Мы работаем с производителями, поэтому гарантируем высокое качество нашей продукции,
+					соответствующее
+					российским, а также международным стандартам. Наши специалисты имеют богатый опыт в решении технических</p>
+
+				<button class="article__hidden-btn secondary-btn">
+					Читать далее
+				</button>
+			</div>
+
+			<div class="article__info">
+				Заказать продукцию или получить консультацию Вы можете по телефону<br><a href="tel:+74951509116">8 (495)
+					150-91-16</a>
+			</div>
+
+			<button class="article__btn main-btn">
+				Написать сообщение директору
+			</button>
+		</div>
+		<div class="article__pic">
+			<img src="images/article.png" alt="#">
+		</div>
+	</div>
+</section>
+</main>
+<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__content">
+			<div class="footer__left">
+				<a href="/main.html" class="footer__logo">
+					<img src="images/footer-logo.svg" alt="logo">
+				</a>
+				<div class="footer__item">
+					<h3 class="footer__item-title">Контакты</h3>
+					<ul class="footer__item-list">
+						<li class="footer__item-unit">
+							<a href="https://maps.app.goo.gl/tLough24TH91CGxZ9" class="footer__item-link">
+								Москва пр-т Маршала Жукова, 2
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="mailto:info+1105497@pipe-ppu.ru" class="footer__item-link">info+1105497@pipe-ppu.ru</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="tel:+74952608570" class="footer__item-link">
+								8 (495) 260-85-70
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Заказать звонок
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__columns">
+				<div class="footer__column">
+					<h3 class="footer__item-title">Категории товара</h3>
+					<ul class="footer__item-list">
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-link">
+								Трубы и фитинги ППУ
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-link">
+								Трубы и фитинги ППМ
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="№" class="footer__item-link">
+								Трубы оболочки
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Трубы ВУС/УС
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Подвески трубопроводов
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Пружинные блоки
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Кожухи фланцевые КЗФ
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Закладные детали
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Крепления трубопроводов
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Метизы
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Металлоконструкции для опор ЛЭП
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Компенсаторы
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Арматура для трубопроводов
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Комплектующие для систем вентиляции
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__item-title">Услуги</h3>
+					<ul class="footer__item-list">
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-link">
+								Анкерные тяги под заказ
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-link">
+								Воздуховоды под заказ
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="№" class="footer__item-link">
+								Изделия по чертежам заказчика
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Производство опор по чертежам
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Производство дымоходов квадратного и круглого сечения
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<h3 class="footer__item-title">Разделы</h3>
+					<ul class="footer__item-list">
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-link">
+								Изоляция трубопроводов
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-link">
+								Нефтегазовое оборудование и материалы
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="№" class="footer__item-link">
+								Системы вентиляции
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Трубопроводная арматура
+							</a>
+						</li>
+						<li class="footer__item-unit">
+							<a href="#" class="footer__item-callback">
+								Трубы и комплектующие
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__action">
+			<div class="footer__action-text">
+				<h3>Подпишитесь на новости</h3>
+				<p>Узнавайте о новинках первыми</p>
+			</div>
+			<form class="footer__form">
+				<label class="footer__form-label">
+					<input type="email" name="email" class="footer__form-input" placeholder="Введите Ваш @">
+					<button type="submit" class="footer__form-submit">Подисаться</button>
+				</label>
+				<p>
+					Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и политикой конфеденциальности
+				</p>
+			</form>
+			<div class="footer__soc">
+				<div class="footer__soc-ico">
+					<svg>
+						<use xlink:href='images/svg/icons.svg#whatsapp'></use>
+					</svg>
+				</div>
+				<div class="footer__soc-ico">
+					<svg>
+						<use xlink:href='images/svg/icons.svg#vk'></use>
+					</svg>
+				</div>
+				<div class="footer__soc-ico">
+					<svg>
+						<use xlink:href='images/svg/icons.svg#ok'></use>
+					</svg>
+				</div>
+				<div class="footer__soc-ico">
+					<svg>
+						<use xlink:href='images/svg/icons.svg#telegram'></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20231220115255"></script>
+<script src="js/main.js?_v=20231220115255"></script>
+</body>
+
+</html>
