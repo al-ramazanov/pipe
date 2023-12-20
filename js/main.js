@@ -108,3 +108,18 @@ if (intro) {
     container.style.backgroundPositionX = null;
   }
 }
+
+function adaptivFooter() {
+  const container = document.querySelector(".footer__container");
+  if (container) {
+    const socMob = document.createElement("div");
+    container.append(socMob);
+    const socBlock = document.querySelector(".footer__soc");
+    socMob.append(socBlock);
+    socMob.style.order = 1;
+  }
+}
+
+if (window.innerWidth <= 520) {
+  adaptivFooter();
+}
