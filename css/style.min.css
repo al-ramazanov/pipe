@@ -114,6 +114,7 @@ img {
   color: #fff;
   border-radius: 10px;
   background: linear-gradient(85deg, #fb63f9, #c2e534);
+  transition: 0.3s linear;
 }
 
 .pages a:not(:last-child) {
@@ -2466,6 +2467,10 @@ img {
 }
 
 @media (any-hover: hover) {
+  .pages a:hover {
+    width: 150px;
+  }
+
   .main-btn:hover {
     background: linear-gradient(180deg, #fd7c4d 0%, #ff6a57 100%);
   }
