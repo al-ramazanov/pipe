@@ -4,7 +4,7 @@
 </mask>
 <g mask="url(#mask0_211_3809)">
 <g style="mix-blend-mode:darken">
-<rect width="425" height="194" transform="matrix(-0.909964 0.414687 0.414687 0.909964 379.734 -97)" fill="url(#pattern0)"/>
+<path d="M379.734 -97L-7.00041 79.2419L73.4488 255.775L460.184 79.5331L379.734 -97Z" fill="url(#pattern0)"/>
 </g>
 </g>
 <defs>

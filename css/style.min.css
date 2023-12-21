@@ -1761,6 +1761,7 @@ img {
 }
 
 .footer__item-link {
+  transition: 0.3s ease;
   padding: 8px 0;
 }
 
@@ -2822,6 +2823,18 @@ img {
 
   .services__wrapper:hover .services-card__decor .arrow {
     animation: bounceIn 0.5s forwards;
+  }
+
+  .news__card:hover .product-card__arrow {
+    opacity: 0.8;
+  }
+
+  .news__card:hover .product-card__arrow svg {
+    animation: bounceIn 0.5s forwards;
+  }
+
+  .footer__item-link:hover {
+    color: #fe6a2d;
   }
 
   .footer__soc-ico:hover {
