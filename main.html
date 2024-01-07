@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Главная</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20231221170032" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240108013950" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20231221170032"
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240108013950"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20231221170032" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240108013950" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 </body>
 
 </html>
-<header class="header">
+<header class="header @@class">
 	<div class="header-top">
 		<div class="header__container">
 			<div class="header-top__city">
@@ -33,6 +33,44 @@
 						<use xlink:href='images/svg/icons.svg#arrow-ico'></use>
 					</svg>
 				</button>
+				<div class="choose-city show">
+	<div class="triangle-city">
+	</div>
+	<h4 class="choose-city__title">
+		Ваш город - <span class="city">Екатеринбург?</span>
+	</h4>
+	<div class="choose-city__btns">
+		<button class="choose-city__btn main-btn">
+			Да, верно
+		</button>
+		<button class="choose-city__more-btn">Нет, выбрать город</button>
+	</div>
+</div>
+<div class="cities">
+	<form class="cities-form">
+		<input type="search" placeholder="Ваш город">
+		<button type="submit">
+			<img src="images/search.svg" alt="search-ico">
+		</button>
+	</form>
+	<ul class="cities__list list-city">
+		<li class="list-city__item">
+			<a href="#" class="list-city__link">
+				Буэнос-Айрес (Аргентина)
+			</a>
+		</li>
+		<li class="list-city__item">
+			<a href="#" class="list-city__link">
+				Сендай (Япония)
+			</a>
+		</li>
+		<li class="list-city__item">
+			<a href="#" class="list-city__link">
+				Джакарта (Индонезия)
+			</a>
+		</li>
+	</ul>
+</div>
 			</div>
 			<nav class="header-top__nav">
 				<a href="#" class="header-top__nav-link header-top__nav-link--submenu">
@@ -64,10 +102,12 @@
 				<img src="images/logo.svg" alt="logo">
 			</a>
 			<div class="header-bottom__action">
-				<button class="header-bottom__catalog main-btn">
-					<svg>
-						<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
-					</svg>
+				<button class="header-bottom__catalog main-btn menu-js">
+					<div class="svg">
+						<svg>
+							<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
+						</svg>
+					</div>
 					Каталог
 				</button>
 				<form class="header__search-form">
@@ -90,40 +130,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="header-bottom-mob">
-		<div class="header-bottom-mob__container">
-
-			<button class="header-bottom__catalog">
-				<svg>
-					<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
-				</svg>
-				Каталог
-			</button>
-			<button class="mobile-cart js-cart active">
-				<span class="cart-counter">123 шт</span>
-				<span>
-					<svg>
-						<use xlink:href='images/svg/icons.svg#cart-ico-mob'></use>
-					</svg>
-				</span>
-			</button>
-
-		</div>
-
-	</div>
-</header>
-<main class="main">
-	<div class="intro">
-	<div class="intro__container">
-		<button class="intro__cart js-cart">
-			<span>
-				<svg>
-					<use xlink:href='images/svg/icons.svg#cart-ico'></use>
-				</svg>
-			</span>
-			корзина
-		</button>
-		<div class="intro__wrapper">
+	<div class="header-slider__container">
+		<div class="header__wrapper">
 			<button class="intro-swiper__btn prev">
 				<svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd" clip-rule="evenodd"
@@ -197,7 +205,303 @@
 				</svg>
 			</button>
 		</div>
-
+		<button class="header__cart js-cart">
+			<span>
+				<svg>
+					<use xlink:href='images/svg/icons.svg#cart-ico'></use>
+				</svg>
+			</span>
+			корзина
+		</button>
+	</div>
+	<div class="header-bottom-mob">
+		<div class="header-bottom-mob__container">
+			<button class="header-bottom__catalog menu-js">
+				<div class="svg">
+					<svg>
+						<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
+					</svg>
+				</div>
+				Каталог
+			</button>
+			<button class="mobile-cart js-cart active">
+				<span class="cart-counter">123 шт</span>
+				<span>
+					<svg>
+						<use xlink:href='images/svg/icons.svg#cart-ico-mob'></use>
+					</svg>
+				</span>
+			</button>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menu__container">
+			<div class="menu__content">
+				<ul class="menu__list">
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-1.png" alt="Трубы и фитинги ППУ">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Трубы и фитинги ППУ
+								</h4>
+								<ul class="menu__card-list">
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы ПНД ППУ</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы с греющим кабелем</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы Твин</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы со спутником</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Фасонные изделия ППУ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-1.png" alt="Трубы оболочки">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Трубы оболочки
+								</h4>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-3.png" alt="Подвески трубопроводов">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Подвески трубопроводов
+								</h4>
+								<ul class="menu__card-list">
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 16127-78</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Серия 4.903-10 вып. 6</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Серия 5.903-13 вып. 6-95</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 34-10-723-93</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 108.275.ХХ-80</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Л8-17Х.000</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Л8-5ХХ.000</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 24.125.1ХХ-01</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-4.png" alt="Трубы ВУС/УС">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Трубы ВУС/УС
+								</h4>
+								<ul class="menu__card-list">
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы стальные в 2-х слойной ВУС изоляции</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы стальные в 3-х слойной ВУС изоляции</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-5.png" alt="Трубы и фитинги ППМ">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Трубы и фитинги ППМ
+								</h4>
+								<ul class="menu__card-list">
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">
+											Трубы ППМ
+										</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">
+											Трубы ППМИ
+										</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">
+											Трубы Твин
+										</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">
+											Фасонные изделия
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-4.png" alt="Трубы ВУС/УС">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Трубы ВУС/УС
+								</h4>
+								<ul class="menu__card-list">
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы стальные в 2-х слойной ВУС изоляции</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы стальные в 3-х слойной ВУС изоляции</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-1.png" alt="Трубы и фитинги ППУ">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Трубы и фитинги ППУ
+								</h4>
+								<ul class="menu__card-list">
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы ПНД ППУ</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы с греющим кабелем</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы Твин</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Трубы со спутником</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Фасонные изделия ППУ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-1.png" alt="Трубы оболочки">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Трубы оболочки
+								</h4>
+							</div>
+						</div>
+					</li>
+					<li class="menu__item">
+						<div class="menu__card">
+							<div class="menu__card-pic">
+								<img src="images/menu-pic-3.png" alt="Подвески трубопроводов">
+							</div>
+							<div class="menu__card-content">
+								<h4 class="menu__card-title">
+									Подвески трубопроводов
+								</h4>
+								<ul class="menu__card-list">
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 16127-78</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Серия 4.903-10 вып. 6</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Серия 5.903-13 вып. 6-95</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 34-10-723-93</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 108.275.ХХ-80</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Л8-17Х.000</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">Л8-5ХХ.000</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link">ГОСТ 24.125.1ХХ-01</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="catalog-menu__banners menu-banners">
+				<ul class="menu-banners__list">
+					<li class="menu-banners__item">
+						<a href="" class="menu-banner">
+							<figure>
+								<img src="images/menu-banner-1.jpg" alt="Трубы, фитинги, баннер">
+								<figcaption>
+									Трубы, фитинги, баннер
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+					<li class="menu-banners__item">
+						<a href="" class="menu-banner">
+							<figure>
+								<img src="images/menu-banner-2.jpg" alt="Трубы, фитинги, баннер">
+								<figcaption>
+									Еще заголовок для баннера
+								</figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+<main class="main">
+	<div class="intro">
+	<div class="intro__container">
 		<div class="intro__text">
 			<h1 class="intro__title">
 				Оптовые поставки изоляции, труб<br>и комплектующих по РФ и СНГ
@@ -1396,7 +1700,7 @@
 					<h3 class="footer__item-title">Контакты</h3>
 					<ul class="footer__item-list mob">
 						<li class="footer__item-unit">
-							<a href="https://maps.app.goo.gl/tLough24TH91CGxZ9" class="footer__item-link">
+							<a href="https://maps.app.goo.gl/tLough24TH91CGxZ9" target="_blank" class="footer__item-link">
 								Москва пр-т Маршала Жукова, 2
 							</a>
 						</li>
@@ -1599,8 +1903,9 @@
 	</div>
 </footer>
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20231221170032"></script>
-<script src="js/main.js?_v=20231221170032"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240108013950"></script>
+<script src="js/swiper.js?_v=20240108013950"></script>
+<script src="js/main.js?_v=20240108013950"></script>
 </body>
 
 </html>

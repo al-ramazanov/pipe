@@ -1,0 +1,27 @@
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="12" height="12" fill="#1E1E1E"/>
+<g id="&#208;&#186;&#208;&#176;&#209;&#130;&#208;&#176;&#208;&#187;&#208;&#190;&#208;&#179; &#209;&#128;&#208;&#176;&#208;&#183;&#208;&#178;&#208;&#181;&#209;&#128;&#208;&#189;&#209;&#131;&#209;&#130;&#208;&#190;" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="10467" transform="translate(-248 -9348)" fill="white"/>
+<g id="Group 11583">
+<g id="Checkbox">
+<rect id="Rectangle 9" x="-4.5" y="-3.5" width="19" height="19" rx="3.5" fill="white" stroke="url(#paint0_linear_0_1)"/>
+<g id="fa-solid:check">
+<path id="Vector" d="M3.73609 9.84288L0.161085 6.35628C-0.0536949 6.14681 -0.0536949 5.80718 0.161085 5.59769L0.938884 4.8391C1.15366 4.62961 1.50193 4.62961 1.71671 4.8391L4.125 7.18782L9.28329 2.1571C9.49807 1.94763 9.84634 1.94763 10.0611 2.1571L10.8389 2.91569C11.0537 3.12516 11.0537 3.46479 10.8389 3.67428L4.51391 9.8429C4.29911 10.0524 3.95087 10.0524 3.73609 9.84288Z" fill="url(#paint1_linear_0_1)"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_1" x1="5" y1="-4" x2="5" y2="16" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE6A2D"/>
+<stop offset="1" stop-color="#FC4738"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_1" x1="5.5" y1="2" x2="5.5" y2="10" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FE6A2D"/>
+<stop offset="1" stop-color="#FC4738"/>
+</linearGradient>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="10467" fill="white" transform="translate(-248 -9348)"/>
+</clipPath>
+</defs>
+</svg>
