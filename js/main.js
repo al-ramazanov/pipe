@@ -291,11 +291,12 @@ document.querySelectorAll(".catalog-dropdown").forEach(function (el) {
 
 function getMaxLengh() {
   const textarea = document.querySelector(".textarea-js");
-
-  const lengthBlock = document.querySelector(".length-curent");
-  console.log(lengthBlock);
-  textarea.addEventListener("input", (e) => {
-    lengthBlock.innerText = e.currentTarget.value.length;
-  });
+  if (textarea) {
+    const lengthBlock = document.querySelector(".length-curent");
+    console.log(lengthBlock);
+    textarea.addEventListener("input", (e) => {
+      lengthBlock.innerText = e.currentTarget.value.length;
+    });
+  }
 }
 getMaxLengh();

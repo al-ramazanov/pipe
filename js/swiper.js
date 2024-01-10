@@ -139,3 +139,32 @@ if (catalogCardContainer) {
     catalogCardContainer.prepend(title);
   }
 }
+
+const cardProductThumbs = new Swiper(".card-product__thumb-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 18,
+
+  // navigation: {
+  //   nextEl: ".catalog-card__thumb-btn.next",
+  //   prevEl: ".catalog-card__thumb-btn.prev",
+  // },
+});
+
+const cardProduct = new Swiper(".card-product__swiper", {
+  slidesPerView: 1.5,
+  spaceBetween: 5,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    600: {
+      slidesPerView: 1,
+    },
+  },
+
+  thumbs: {
+    swiper: cardProductThumbs,
+  },
+});
