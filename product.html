@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Карточка товара</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240110230608" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240112001552" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240110230608"
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240112001552"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20240110230608" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240112001552" />
 </head>
 
 <body>
@@ -626,7 +626,6 @@
 							DN
 							100 мм PN 10 кгс/см2
 						</span>
-
 						<a href="#" class="catalog-card__header-more">Читать все</a>
 					</p>
 				</div>
@@ -634,12 +633,12 @@
 					<div class="card-product__request">
 						<a href="#">Цена по запросу</a>
 					</div>
-					<div class="card-product__counter counter">
-						<button class="counter__btn">
+					<div class="card-product__counter counter counter-js">
+						<button class="counter__btn decrement-js">
 							<img src="images/minus.svg" alt="minus">
 						</button>
-						<input type="number" class="counter__count" value="0">
-						<button class="counter__btn">
+						<input type="number" class="counter__count value-js" value="0">
+						<button class="counter__btn increment-js">
 							<img src="images/plus.svg" alt="plus">
 						</button>
 					</div>
@@ -692,7 +691,1109 @@
 				</div>
 			</div>
 		</div>
+		<div class="card-product__feature">
+			<h2>Характеристики</h2>
+			<div class="product-spec">
+				<div class="catalog-card__spec">
+					<ul class="catalog-card__spec-list">
+						<li>
+							<p class="catalog-card__spec-item">
+								ДУ:
+							</p>
+							<div class="catalog-card__spec-info">
+								40
+							</div>
+						</li>
+						<li>
+							<p class="catalog-card__spec-item">
+								Вес:
+							</p>
+							<div class="catalog-card__spec-info">
+								250
+							</div>
+						</li>
+						<li>
+							<p class="catalog-card__spec-item">
+								Марка:
+							</p>
+							<div class="catalog-card__spec-info">
+								название марки
+							</div>
+						</li>
+						<li>
+							<p class="catalog-card__spec-item">
+								Гост:
+							</p>
+							<div class="catalog-card__spec-info">
+								ОСТ 36-147-88
+							</div>
+						</li>
+						<li>
+							<p class="catalog-card__spec-item">
+								Группа прочности:
+							</p>
+							<div class="catalog-card__spec-info">
+								Д
+							</div>
+						</li>
+						<li>
+							<p class="catalog-card__spec-item">
+								Материал:
+							</p>
+							<div class="catalog-card__spec-info">
+								Сталь
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
+	<div class="product-tabs" data-tabs>
+		<div class="product-tabs__header">
+			<div class="product-tabs__container">
+				<div class="product-tabs__btns">
+					<button class="product-tabs__btn active" data-tab="1">
+						О товаре
+					</button>
+					<button class="product-tabs__btn" data-tab="2">
+						Отзывы и рейтинг
+					</button>
+					<button class="product-tabs__btn" data-tab="3">
+						Доставка/самовывоз
+					</button>
+					<button class="product-tabs__btn" data-tab="4">
+						Документация
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="product-tabs__container">
+			<div class="product-tabs__content-contents">
+				<div class="product-tabs__content" data-id="1">
+					ОСТ 34-10-610-93 распространяется на опоры неподвижные, предназначенные для крепления вертикальных коробов
+					пылегазовоздухопроводов ТЭС с Дн или Ау 325-2020 мм с температурой среды меньшей 425 градусам Цельсия.
+					Детали и сборочные единицы изготавливаются по рабочим чертежам «Опоры подвижные и неподвижные» Л8-138.000
+					Пример условного обозначения опоры для вертикального короба Дн=630 мм тип 1:
+					Опора 630-1 ОСТ34-10-610
+					Опоры ТПР Опоры ТПР2 Опоры ТПР3 Опоры ТПР 4
+				</div>
+
+				<div class="product-tabs__content reviews" data-id="2">
+					<h2 class="product-tabs__title">
+						Отзывы
+					</h2>
+
+					<div class="product-comment">
+						<h3 class="product-comment__title">Han Solo</h3>
+						<p class="product-comment__text">
+							Отличный шлем, пришел в целости и сохранности. Без гемороя с доставкой, на почте оплатил таможенную
+							пошлину в 600 с чем то руб. пару подписей в извещении и посылка ваша. По работе нареканий нет. Спрятали
+							куда то настройку герцовки экрана, в 28ой версии прошивки она была а в 30ой ее нет, пришлось ручками по
+							гайдам на ютубе через консоль в side quest... <a href="#">Читать полностью</a>
+						</p>
+						<div class="product-comment__action">
+							<div class="product-comment__btn">
+								<button class="product-comment__like-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#like-ico'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<div class="product-comment__btn">
+								<button class="product-comment__dislike-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#dislike'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<button class="product-comment__answer">
+								Ответить
+							</button>
+						</div>
+					</div>
+
+					<div class="product-comment product-comment--answer">
+						<h3 class="product-comment__title">Han Solo</h3>
+						<p class="product-comment__text">
+							Отличный шлем, пришел в целости и сохранности. Без гемороя с доставкой, на почте оплатил таможенную
+							пошлину в 600 с чем то руб. пару подписей в извещении и посылка ваша. По работе нареканий нет. Спрятали
+							куда то настройку герцовки экрана, в 28ой версии прошивки она была а в 30ой ее нет, пришлось ручками по
+							гайдам на ютубе через консоль в side quest... <a href="#">Читать полностью</a>
+						</p>
+						<div class="product-comment__action">
+							<div class="product-comment__btn">
+								<button class="product-comment__like-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#like-ico'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<div class="product-comment__btn">
+								<button class="product-comment__dislike-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#dislike'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<button class="product-comment__answer">
+								Ответить
+							</button>
+						</div>
+					</div>
+
+					<form class="comment-form">
+						<h3 class="comment-form__title">
+							Добавить отзыв
+						</h3>
+						<div class="comment-form__textarea-wrapper textarea-js">
+							<textarea name="comment" placeholder="Напишите текст" class="textarea-js" maxlength="100"></textarea>
+							<p class="length">
+								<span class="length-curent">0</span>
+								/
+								<span class="length-max">100</span>
+							</p>
+						</div>
+						<div class="comment-form__footer">
+							<button type="submit" class="comment-form__btn main-btn">
+								Отправить
+							</button>
+							<p>
+								Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и политикой конфеденциальности
+							</p>
+						</div>
+					</form>
+
+					<div class="product-comment">
+						<h3 class="product-comment__title">Пользователь предпочёл скрыть свои данные
+						</h3>
+						<p class="product-comment__text">
+							Отправили через неделю из Германии.. дошло за 10 дней.. Привез курьер домой... углы у коробки помяты, но
+							внутри все целое. Батарейки в комплекте... Таможенный сбор 770 рублей оплатил курьеру наличными... Нужен
+							паспорт и ИНН.. Вещь занятная... единственное неудобство это межзрачковое расстояние максимум 68мм на
+							третьем положении.. У... <a href="#">Читать полностью</a>
+						</p>
+						<div class="product-comment__action">
+							<div class="product-comment__btn">
+								<button class="product-comment__like-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#like-ico'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<div class="product-comment__btn">
+								<button class="product-comment__dislike-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#dislike'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<button class="product-comment__answer">
+								Ответить
+							</button>
+						</div>
+					</div>
+
+					<div class="product-comment">
+						<h3 class="product-comment__title">Tktyf</h3>
+						<p class="product-comment__text">
+							потрясающий эффект погружения в виртуальную реальность
+						</p>
+						<div class="product-comment__action">
+							<div class="product-comment__btn">
+								<button class="product-comment__like-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#like-ico'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<div class="product-comment__btn">
+								<button class="product-comment__dislike-btn">
+									<svg>
+										<use xlink:href='images/svg/icons.svg#dislike'></use>
+									</svg>
+								</button>
+								<div class="product-comment__like-count">0</div>
+							</div>
+							<button class="product-comment__answer">
+								Ответить
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="product-tabs__content delivery" data-id="3">
+					Быстрая и качественная доставка инженерного оборудования.
+					Мы работаем с надежными логистическими партнерами, что позволяет осуществлять доставку в короткие сроки и
+					гарантировать сохранность товара. Доставка возможна как до конкретного адреса, так и до терминала транспортной
+					компании.
+					Выберите вариант, который окажется для вас предпочтительней, а мы составим оптимальный маршрут и обеспечим
+					удобное получение груза.
+
+					Стоимость перевозки отдельных позиций рассчитывается на этапе формирования заказа от ближайшего склада с
+					требующимся товаром до вашего города.
+					Если вы оформляете сборный заказ, то информацию о точных сроках и стоимости доставки мы передадим после
+					построения маршрута. Учитывайте это при покупке!
+
+					Отгрузка товара начнется после оплаты заказа. Вместе с заказом покупатель получит:
+					<ul class="product-tabs__list">
+						<li>Паспорт устройства;</li>
+						<li>Гарантию от производителя;</li>
+						<li>Накладную</li>
+					</ul>
+					Параллельно доставке вам отправят:
+					<ul class="product-tabs__list">
+						<li>Счет-фактуру;</li>
+						<li>Товарную накладную;</li>
+						<li>Оригинал счета;</li>
+						<li>Оригинал договора.</li>
+					</ul>
+					Ориентировочная доставка в г. Екатеринбург 10.12.2023
+				</div>
+
+				<div class="product-tabs__content" data-id="4">
+					<div class="product-documentation">
+						<a href="#" download class="product-documentation__card">
+							<div class="product-documentation__car-ico">
+								<img src="images/downld.svg" alt="#">
+							</div>
+							<p class="product-documentation__card-text">
+								Декларация ТР ТС 032_2013 (изб.давл.) задвижки шланговые ПА 800.pdf
+							</p>
+						</a>
+						<a href="#" download class="product-documentation__card">
+							<div class="product-documentation__car-ico">
+								<img src="images/downld.svg" alt="#">
+							</div>
+							<p class="product-documentation__card-text">
+								Декларация ТР ТС 010_2011 задвижки шланговые ПА 800.pdf
+							</p>
+						</a>
+						<a href="#" download class="product-documentation__card">
+							<div class="product-documentation__car-ico">
+								<img src="images/downld.svg" alt="#">
+							</div>
+							<p class="product-documentation__card-text">
+								Каталог шланговых задвижек.pdf
+							</p>
+						</a>
+						<a href="#" download class="product-documentation__card">
+							<div class="product-documentation__car-ico">
+								<img src="images/downld.svg" alt="#">
+							</div>
+							<p class="product-documentation__card-text">
+								Опросный лист для заказа шланговых задвижек.xls
+							</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="recomended">
+		<div class="recomended__container">
+			<h2 class="recomended__title">
+				Варианты товара
+			</h2>
+			<div class="catalog-table__wrapper">
+				<div class="catalog-table">
+					<div class="catalog-table__header">
+						<div class="catalog-table__header-item name">Наименование</div>
+						<div class="catalog-table__header-item du">ДУ</div>
+						<div class="catalog-table__header-item weight">Вес</div>
+						<div class="catalog-table__header-item brand">Марка</div>
+						<div class="catalog-table__header-item gost">Гост</div>
+						<div class="catalog-table__header-item price">Цена</div>
+					</div>
+					<div class="catalog-table__row">
+						<div class="catalog-table__info name">
+							Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info du">
+							40
+						</div>
+						<div class="catalog-table__info weight">
+							50
+						</div>
+						<div class="catalog-table__info brand">
+							название марки
+						</div>
+						<div class="catalog-table__info gost">
+							ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info price">
+							<a href="#" class="find-price">Узнать цену</a>
+							<button class="catalog-table__delete">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+											stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+										<path
+											d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+											stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="catalog-table__row">
+						<div class="catalog-table__info name">
+							Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info du">
+							40
+						</div>
+						<div class="catalog-table__info weight">
+							50
+						</div>
+						<div class="catalog-table__info brand">
+							название марки
+						</div>
+						<div class="catalog-table__info gost">
+							ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info price">
+							<a href="#" class="find-price">Узнать цену</a>
+							<button class="catalog-table__delete">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+											stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+										<path
+											d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+											stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="catalog-table__row">
+						<div class="catalog-table__info name">
+							Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info du">
+							40
+						</div>
+						<div class="catalog-table__info weight">
+							50
+						</div>
+						<div class="catalog-table__info brand">
+							название марки
+						</div>
+						<div class="catalog-table__info gost">
+							ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info price">
+							<a href="#" class="find-price">Узнать цену</a>
+							<button class="catalog-table__delete">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+											stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+										<path
+											d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+											stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="recomended">
+		<div class="recomended__container">
+			<h2 class="recomended__title">
+				Ранее вы смотрели
+			</h2>
+			<div class="catalog-table__wrapper">
+				<div class="catalog-table">
+					<div class="catalog-table__header">
+						<div class="catalog-table__header-item name">Наименование</div>
+						<div class="catalog-table__header-item du">ДУ</div>
+						<div class="catalog-table__header-item weight">Вес</div>
+						<div class="catalog-table__header-item brand">Марка</div>
+						<div class="catalog-table__header-item gost">Гост</div>
+						<div class="catalog-table__header-item price">Цена</div>
+					</div>
+					<div class="catalog-table__row">
+						<div class="catalog-table__info name">
+							Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info du">
+							40
+						</div>
+						<div class="catalog-table__info weight">
+							50
+						</div>
+						<div class="catalog-table__info brand">
+							название марки
+						</div>
+						<div class="catalog-table__info gost">
+							ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info price">
+							<a href="#" class="find-price">Узнать цену</a>
+							<button class="catalog-table__delete">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+											stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+										<path
+											d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+											stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="catalog-table__row">
+						<div class="catalog-table__info name">
+							Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info du">
+							40
+						</div>
+						<div class="catalog-table__info weight">
+							50
+						</div>
+						<div class="catalog-table__info brand">
+							название марки
+						</div>
+						<div class="catalog-table__info gost">
+							ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info price">
+							<a href="#" class="find-price">Узнать цену</a>
+							<button class="catalog-table__delete">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+											stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+										<path
+											d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+											stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+					<div class="catalog-table__row">
+						<div class="catalog-table__info name">
+							Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info du">
+							40
+						</div>
+						<div class="catalog-table__info weight">
+							50
+						</div>
+						<div class="catalog-table__info brand">
+							название марки
+						</div>
+						<div class="catalog-table__info gost">
+							ОСТ 36-146-88
+						</div>
+						<div class="catalog-table__info price">
+							<a href="#" class="find-price">Узнать цену</a>
+							<button class="catalog-table__delete">
+								<span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+											stroke-linecap="round" stroke-linejoin="round"></path>
+										<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+											stroke-linejoin="round"></path>
+										<path
+											d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+											stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+				<div class="catalog-mob">
+					<div class="catalog-table__info name">
+						Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88
+					</div>
+					<div class="catalog-mob__body">
+						<ul class="catalog-mob__list">
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+							</li>
+							<li class="catalog-mob__list-item">
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="catalog-mob__price">
+						<a href="#" class="find-price">Узнать цену</a>
+						<button class="catalog-table__delete">
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 30 30" fill="none">
+									<path d="M13.75 25.625H13.875M21.25 25.625H21.375" stroke="white" stroke-width="3.54167"
+										stroke-linecap="round" stroke-linejoin="round"></path>
+									<path d="M15 8.75L17.5 11.25L22.5 6.25" stroke="white" stroke-width="2.83333" stroke-linecap="round"
+										stroke-linejoin="round"></path>
+									<path
+										d="M3.75 3.74989H6.5C6.78895 3.74282 7.07142 3.83612 7.29933 4.01388C7.52724 4.19165 7.6865 4.44291 7.75 4.72489L11.025 19.0249C11.0885 19.3069 11.2478 19.5581 11.4757 19.7359C11.7036 19.9137 11.986 20.0069 12.275 19.9999H22.8C23.0855 20.0082 23.3653 19.9185 23.5928 19.7456C23.8202 19.5728 23.9816 19.3272 24.05 19.0499L26.25 9.99988"
+										stroke="white" stroke-width="2.83333" stroke-linecap="round" stroke-linejoin="round"></path>
+								</svg>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact-form">
+	<div class="contact-form__container">
+		<form class="contact-form__form form-contact">
+			<div class="section-header">
+	<h2 class="section-header__title">
+		Свяжитесь с нами 
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title">
+	</h2>
+	<a href="#" class="section-header__link">
+		
+
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-left">
+		<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-right">
+	</a>
+	<img src="images/decor.svg" alt="decor" class="section-header__link-decor decor-title hidden">
+
+</div>
+			<p class="form-contact__subtitle">
+				Менеджеры компании ответят на Ваши вопросы и произведут расчет стоимости услуг, и подготовят коммерческое
+				предложение специально для Вас
+			</p>
+			<div class="form-contact__wrapper">
+				<label class="form-contact__label">
+					<h4>Ваше имя</h4>
+					<input type="text" placeholder="Введите имя" class="form-contact__input" minlength="3" required>
+					<span class="error-text">error text</span>
+				</label>
+				<label class="form-contact__label">
+					<h4>Телефон</h4>
+					<input type="tel" placeholder="+7" class="form-contact__input" required>
+					<span class="error-text">error text</span>
+				</label>
+				<label class="form-contact__label">
+					<h4>e-mail</h4>
+					<input type="email" placeholder="@" class="form-contact__input">
+					<span class="error-text">error text</span>
+				</label>
+				<label class="form-contact__label textarea-js">
+					<h4>Сообщение</h4>
+					<textarea class="form-contact__input textarea" placeholder="Введите текст" maxlength="100"></textarea>
+					<p class="length">
+						<span class="length-curent">0</span>
+						/
+						<span class="length-max">100</span>
+					</p>
+				</label>
+			</div>
+			<div class="form-contact__action">
+				<div class="form-contact__action-wrap">
+					<label class="form-contact__action-label">
+						<input type="checkbox" name="privacy" required>
+						<span class="checkbox">
+							<img src="images/check.svg" alt="#">
+						</span>
+					</label>
+					<span class="privacy-text">Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и
+						<a href="#">политикой конфеденциальности</a></span>
+				</div>
+
+				<button class="form-contact__submit main-btn">Отправить сообщение</button>
+			</div>
+		</form>
+		<div class="contact-form__pic">
+			<h3>Мерзлякова Александра</h3>
+			<p>Специалист отдела продаж</p>
+			<img src="images/contact-form-pic.png" alt="#">
+		</div>
+	</div>
+</div>
 </main>
 <footer class="footer">
 	<div class="footer__container">
@@ -908,9 +2009,9 @@
 	</div>
 </footer>
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240110230608"></script>
-<script src="js/swiper.js?_v=20240110230608"></script>
-<script src="js/main.js?_v=20240110230608"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240112001552"></script>
+<script src="js/swiper.js?_v=20240112001552"></script>
+<script src="js/main.js?_v=20240112001552"></script>
 </body>
 
 </html>

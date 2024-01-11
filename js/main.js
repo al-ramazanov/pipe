@@ -290,12 +290,18 @@ document.querySelectorAll(".catalog-dropdown").forEach(function (el) {
 });
 
 function getMaxLengh() {
-  const textarea = document.querySelector(".textarea-js");
-  if (textarea) {
-    const lengthBlock = document.querySelector(".length-curent");
-    console.log(lengthBlock);
-    textarea.addEventListener("input", (e) => {
-      lengthBlock.innerText = e.currentTarget.value.length;
+  const textareaBlocks = document.querySelectorAll(".textarea-js");
+  if (textareaBlocks) {
+    textareaBlocks.forEach((el) => {
+      const textarea = el.querySelector("textarea");
+      if (textarea) {
+        const lengthBlock = el.querySelector(".length-curent");
+        if (lengthBlock) {
+          textarea.addEventListener("input", (e) => {
+            lengthBlock.innerText = e.currentTarget.value.length;
+          });
+        }
+      }
     });
   }
 }
@@ -312,3 +318,63 @@ function mooveProductRating() {
 }
 
 mooveProductRating();
+
+function openTabs() {
+  const tabsBlock = document.querySelectorAll("[data-tabs]");
+  if (tabsBlock) {
+    tabsBlock.forEach((block) => {
+      const btns = block.querySelectorAll("[data-tab]");
+      btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          const tabId = btn.dataset.tab;
+          const tabContent = block.querySelector(`[data-id="${tabId}"]`);
+          if (tabContent) {
+            const tabContents = block.querySelectorAll("[data-id]");
+            const tabBtns = block.querySelectorAll("[data-tab]");
+            tabBtns.forEach((element) => {
+              element.classList.remove("active");
+            });
+            tabContents.forEach((element) => {
+              element.classList.remove("active");
+            });
+            e.currentTarget.classList.add("active");
+            tabContent.classList.add("active");
+          } else {
+          }
+        });
+      });
+      const btns1 = block.querySelector("[data-tab]").click();
+    });
+  }
+}
+
+openTabs();
+
+function cartCounter() {
+  const counters = document.querySelectorAll(".counter-js");
+  if (counters) {
+    counters.forEach((counter) => {
+      const decrementBtn = counter.querySelector(".decrement-js");
+      const incrementBtn = counter.querySelector(".increment-js");
+      const count = counter.querySelector(".value-js");
+      let counterValue = +count.value;
+
+      function increment(e) {
+        e.preventDefault();
+        counterValue++;
+        count.value = counterValue;
+      }
+      function decrement(e) {
+        e.preventDefault();
+        if (counterValue > 0) {
+          counterValue--;
+          count.value = counterValue;
+        }
+      }
+      incrementBtn.addEventListener("click", increment);
+      decrementBtn.addEventListener("click", decrement);
+    });
+  }
+}
+cartCounter();
