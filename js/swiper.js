@@ -100,7 +100,7 @@ const catalogCard = new Swiper(".catalog-card__swiper", {
   spaceBetween: 5,
 
   breakpoints: {
-    600: {
+    360: {
       slidesPerView: 1,
     },
   },
@@ -159,7 +159,7 @@ const cardProduct = new Swiper(".card-product__swiper", {
     clickable: true,
   },
   breakpoints: {
-    600: {
+    360: {
       slidesPerView: 1,
     },
   },

@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Карточка товара</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240109193507" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240110230608" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240109193507"
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240110230608"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20240109193507" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240110230608" />
 </head>
 
 <body>
@@ -530,6 +530,7 @@
 		<h2 class="product__title">
 			Крепление трубопровода ОСТ 34-10-610-93
 		</h2>
+		<div class="product__mob-rating"></div>
 		<div class="product__content">
 			<div class="product__left">
 				<div class="card-product__sliders">
@@ -620,9 +621,13 @@
 						</a>
 					</div>
 					<p class="product-spec__text">
-						(корпус - алюминиевый сплав, материал патрубка - натуральный каучук, рабочее давление 10 кгс/см2) , L=350
-						DN
-						100 мм PN 10 кгс/см2
+						<span>
+							(корпус - алюминиевый сплав, материал патрубка - натуральный каучук, рабочее давление 10 кгс/см2) , L=350
+							DN
+							100 мм PN 10 кгс/см2
+						</span>
+
+						<a href="#" class="catalog-card__header-more">Читать все</a>
 					</p>
 				</div>
 				<div class="card-product__order">
@@ -644,7 +649,7 @@
 				</div>
 			</div>
 			<div class="product__right">
-				<div class="card-product__contacts">
+				<div class="card-product__contact">
 					<div class="card-product__info">
 						<div class="card-product__rating">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
@@ -663,7 +668,26 @@
 						На складе в Екатеринбурге: 1432 шт
 					</span>
 					<div class="card-product__contacts">
-
+						<a href="#" class="card-product__contacts-link fax">
+							Арт.: 4567890
+						</a>
+						<a href="tel:+74994601339" class="card-product__contacts-link tel">
+							8 (499) 460-13-39
+						</a>
+						<a href="mailto:info+1102018@pipe-ppu.ru" class="card-product__contacts-link email">
+							info+1102018@pipe-ppu.ru
+						</a>
+					</div>
+					<div class="card-product__advice">
+						<div class="card-product__advice-specialist">
+							<div class="card-product__advice-img">
+								<img src="images/advice.png" alt="#">
+							</div>
+							<h3>Появились вопросы о товаре?</h3>
+						</div>
+						<a href="#" class="card-product__advice-link">
+							Нужна консультация специалиста
+						</a>
 					</div>
 				</div>
 			</div>
@@ -884,9 +908,9 @@
 	</div>
 </footer>
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240109193507"></script>
-<script src="js/swiper.js?_v=20240109193507"></script>
-<script src="js/main.js?_v=20240109193507"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240110230608"></script>
+<script src="js/swiper.js?_v=20240110230608"></script>
+<script src="js/main.js?_v=20240110230608"></script>
 </body>
 
 </html>

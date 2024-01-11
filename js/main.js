@@ -300,3 +300,15 @@ function getMaxLengh() {
   }
 }
 getMaxLengh();
+
+function mooveProductRating() {
+  const mobRating = document.querySelector(".product__mob-rating");
+  const deskRating = document.querySelector(".card-product__info");
+  const fax = document.querySelector(".card-product__contacts-link");
+  if (window.innerWidth <= 768) {
+    mobRating.append(deskRating);
+    mobRating.append(fax);
+  }
+}
+
+mooveProductRating();

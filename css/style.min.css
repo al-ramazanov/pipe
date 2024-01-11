@@ -1731,7 +1731,7 @@ input[type=search]::-webkit-search-cancel-button {
 
 .article__pic img {
   max-width: 100%;
-  margin-bottom: -55px;
+  margin-top: -55px;
 }
 
 .footer {
@@ -3841,6 +3841,7 @@ input[type=search]::-webkit-search-cancel-button {
 
 .product__content {
   display: flex;
+  align-items: start;
   margin-bottom: 114px;
 }
 
@@ -3850,7 +3851,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .product__middle {
-  flex: 0 0 709px;
+  flex: 0 1 709px;
   overflow: hidden;
 }
 
@@ -3871,6 +3872,16 @@ input[type=search]::-webkit-search-cancel-button {
   margin-bottom: 16px;
 }
 
+.product__right {
+  flex-shrink: 0;
+  flex-basis: 337px;
+  margin-left: 26px;
+  padding: 35px 28px;
+  border-radius: 15px;
+  background-color: #f5f5fa;
+  margin-top: -86px;
+}
+
 .product__title {
   color: var(--black-color);
   font-family: Manrope;
@@ -3879,6 +3890,10 @@ input[type=search]::-webkit-search-cancel-button {
   line-height: 1.2;
   letter-spacing: -0.72px;
   margin-bottom: 44px;
+}
+
+.product__mob-rating {
+  display: none;
 }
 
 .card-product__sliders {
@@ -3897,6 +3912,7 @@ input[type=search]::-webkit-search-cancel-button {
   display: flex;
   align-items: center;
   gap: 49px;
+  flex-wrap: wrap;
 }
 
 .card-product__request {
@@ -3916,11 +3932,109 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .card-product__add {
+  flex: 1 1 auto;
   padding: 25.15px 36px;
   color: #fff;
   font-size: 17px;
   font-weight: 500;
   line-height: 1.3;
+}
+
+.card-product__contact {
+  line-height: 1.3;
+}
+
+.card-product__contact > *:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.card-product__contact .catalog-card__stock {
+  color: var(--black-colo);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.card-product__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--grey-color);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card-product__rating {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.card-product__review {
+  text-decoration: underline;
+}
+
+.card-product__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-product__contacts-link {
+  color: var(--black-color);
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 2px 0 2px 36px;
+}
+
+.card-product__contacts-link:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.card-product__contacts-link.fax {
+  background: url("../images/print-alt-5.svg") left center no-repeat;
+}
+
+.card-product__contacts-link.tel {
+  background: url("../images/phone2.svg") left center no-repeat;
+}
+
+.card-product__contacts-link.email {
+  background: url("../images/open-mail2.svg") left center no-repeat;
+}
+
+.card-product__advice-img {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.card-product__advice-specialist {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.card-product__advice-specialist h3 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.36px;
+}
+
+.card-product__advice-link {
+  font-weight: 500;
+  text-decoration: underline;
+  color: #fe6a2d;
 }
 
 .product-spec__action {
@@ -4174,7 +4288,7 @@ input[type=search]::-webkit-search-cancel-button {
   }
 
   .article__pic img {
-    margin-bottom: calc(10px + -65 * ((100vw - 320px) /1120));
+    margin-top: calc(10px + -65 * ((100vw - 320px) /1120));
   }
 
   .footer {
@@ -4282,7 +4396,7 @@ input[type=search]::-webkit-search-cancel-button {
   }
 
   .product__content {
-    margin-bottom: calc(30px + 84 * ((100vw - 320px) /1120));
+    margin-bottom: calc(48px + 66 * ((100vw - 320px) /1120));
   }
 }
 
@@ -4336,6 +4450,19 @@ input[type=search]::-webkit-search-cancel-button {
 
   .order-cards__item:not(:last-child):after {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .product__content {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .product__right {
+    flex: 1 1 100%;
+    margin-top: 0;
+    margin-left: 0;
   }
 }
 
@@ -4507,6 +4634,19 @@ input[type=search]::-webkit-search-cancel-button {
 
   .form-contact__label {
     flex: 1 1 100%;
+  }
+
+  .product__content {
+    display: block;
+  }
+
+  .product__left {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+
+  .product__middle {
+    margin-bottom: 30px;
   }
 }
 
@@ -5201,6 +5341,84 @@ input[type=search]::-webkit-search-cancel-button {
     order: -1;
     font-size: 14px;
   }
+
+  .product__right {
+    margin: 0 -15px;
+    padding: 38px 15px;
+    border-radius: 0;
+  }
+
+  .product__title {
+    margin-bottom: 15px;
+  }
+
+  .product__mob-rating {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .card-product__order {
+    gap: 15px;
+  }
+
+  .card-product__add {
+    font-size: 14px;
+    padding: 20px 36px;
+  }
+
+  .card-product__contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-product__contact > *:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .card-product__contact .catalog-card__stock {
+    display: none;
+  }
+
+  .card-product__info {
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .card-product__contacts-link:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .card-product__advice {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .card-product__advice-specialist {
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-bottom: 0px;
+  }
+
+  .product-spec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-spec__all {
+    order: -1;
+  }
+
+  .product-spec__text {
+    order: -1;
+    margin-bottom: 14px;
+  }
+
+  .product-spec__text .catalog-card__header-more {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) and (max-width: 1440px) {
@@ -5394,6 +5612,14 @@ input[type=search]::-webkit-search-cancel-button {
   .production-card .product-card__arrow svg {
     height: 12px;
   }
+
+  .card-product__swiper .catalog-card__pagination {
+    display: block;
+  }
+
+  .card-product__thumb {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -5486,6 +5712,15 @@ input[type=search]::-webkit-search-cancel-button {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     overflow: hidden;
   }
+
+  .counter {
+    flex: 1 1 100%;
+    order: 2;
+  }
+
+  .counter__count {
+    flex: 1 1 100%;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -5509,6 +5744,14 @@ input[type=search]::-webkit-search-cancel-button {
 
   .about__info-item:nth-child(5) {
     order: 6;
+  }
+
+  .card-product__swiper {
+    padding-bottom: 25px;
+  }
+
+  .card-product__swiper .swiper-pagination {
+    bottom: 0;
   }
 }
 
