@@ -254,6 +254,14 @@ function openFilter(e) {
 
 openFilter();
 
+const catalogCardContainer = document.querySelector(".catalog-card__container");
+if (catalogCardContainer) {
+  const title = document.querySelector(".catalog-card__title");
+  if (window.innerWidth <= 768) {
+    catalogCardContainer.prepend(title);
+  }
+}
+
 document.querySelectorAll(".catalog-dropdown").forEach(function (el) {
   const btn = el.querySelector(".catalog-dropdown__header");
   const body = el.querySelector(".catalog-dropdown__list");
@@ -309,11 +317,13 @@ getMaxLengh();
 
 function mooveProductRating() {
   const mobRating = document.querySelector(".product__mob-rating");
-  const deskRating = document.querySelector(".card-product__info");
-  const fax = document.querySelector(".card-product__contacts-link");
-  if (window.innerWidth <= 768) {
-    mobRating.append(deskRating);
-    mobRating.append(fax);
+  if (mobRating) {
+    const deskRating = document.querySelector(".card-product__info");
+    const fax = document.querySelector(".card-product__contacts-link");
+    if (window.innerWidth <= 768) {
+      mobRating.append(deskRating);
+      mobRating.append(fax);
+    }
   }
 }
 
@@ -378,3 +388,36 @@ function cartCounter() {
   }
 }
 cartCounter();
+
+function replaceCartBtn() {
+  const btnPlace = document.querySelector(".header-slider__container");
+  const btn = document.querySelector(".js-cart");
+  const destination = document.querySelector(".header-bottom-mob__container");
+
+  if (window.innerWidth <= 768) {
+    destination.append(btn);
+  } else {
+    btnPlace.append(btn);
+  }
+
+  window.addEventListener("resize", (e) => {
+    if (window.innerWidth <= 768) {
+      destination.append(btn);
+    } else {
+      btnPlace.append(btn);
+    }
+  });
+}
+replaceCartBtn();
+
+// имя файла в input file
+
+const fileInputs = document.querySelectorAll("input[type='file']");
+fileInputs.forEach((input) => {
+  const text = input.nextElementSibling;
+  const fileName = text.querySelector(".file-name-js");
+  input.addEventListener("input", (e) => {
+    fileName.innerText = e.currentTarget.files[0].name;
+  });
+});
+// имя файла в input file

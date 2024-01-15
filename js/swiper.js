@@ -132,14 +132,6 @@ const catalogInfo = new Swiper(".catalog-card__info-swiper", {
   },
 });
 
-const catalogCardContainer = document.querySelector(".catalog-card__container");
-if (catalogCardContainer) {
-  const title = document.querySelector(".catalog-card__title");
-  if (window.innerWidth <= 768) {
-    catalogCardContainer.prepend(title);
-  }
-}
-
 const cardProductThumbs = new Swiper(".card-product__thumb-swiper", {
   slidesPerView: 3,
   spaceBetween: 18,
@@ -166,5 +158,24 @@ const cardProduct = new Swiper(".card-product__swiper", {
 
   thumbs: {
     swiper: cardProductThumbs,
+  },
+});
+
+const servicesIntro = new Swiper(".services-intro__swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  // autoplay: {
+  //   delay: 2000,
+  // },
+});
+const interestedSwiper = new Swiper(".interested__swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  // autoplay: {
+  //   delay: 2000,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });

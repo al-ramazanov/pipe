@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Корзина</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240112013705" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240115023813" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240112013705"
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240115023813"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20240112013705" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240115023813" />
 </head>
 
 <body>
@@ -205,19 +205,11 @@
 				</svg>
 			</button>
 		</div>
-		<button class="header__cart js-cart">
-			<span class="cart-ico">
-				<svg>
-					<use xlink:href='images/svg/icons.svg#cart-ico'></use>
-				</svg>
-			</span>
-			корзина
-		</button>
-		<button class="mobile-cart js-cart active product-cart">
+		<button class="mobile-cart js-cart active">
 			<span class="cart-counter">123 шт</span>
 			<span>
 				<svg>
-					<use xlink:href="images/svg/icons.svg#cart-ico-mob"></use>
+					<use xlink:href='images/svg/icons.svg#cart-check'></use>
 				</svg>
 			</span>
 		</button>
@@ -231,14 +223,6 @@
 					</svg>
 				</div>
 				Каталог
-			</button>
-			<button class="mobile-cart js-cart active">
-				<span class="cart-counter">123 шт</span>
-				<span>
-					<svg>
-						<use xlink:href='images/svg/icons.svg#cart-ico-mob'></use>
-					</svg>
-				</span>
 			</button>
 		</div>
 	</div>
@@ -525,21 +509,453 @@
 			<h2 class="cart-content__title">
 				Корзина
 			</h2>
-			<div class="cart-content__info cart-info">
-				<div class="cart-info__items">
-					<ul class="cart-info__list">
-						<li class="cart-info__qty">12 товара</li>
-						<li class="cart-info__weight">Вес - 100кг</li>
-					</ul>
-					<div class="cart-info__select">
-						<label class="custom-checkbox">
+			<div class="cart-content__wrapper">
+				<div class="cart-content__left">
+					<div class="cart-content__info cart-info">
+						<div class="cart-info__items">
+							<ul class="cart-info__list">
+								<li class="cart-info__qty">12 товара</li>
+								<li class="cart-info__weight">Вес - 100кг</li>
+							</ul>
+							<button class="cart-info__select">
+								<label>
+									<label class="custom-checkbox">
 	<input type="checkbox" name="privacy" required="">
 	<span class="checkbox">
 		<img src="images/check.svg" alt="#">
 	</span>
 </label>
+									Выбрать все
+								</label>
+							</button>
+							<button class="cart-info__delete">
+								Удалить (<span class="cart-info__delete-counter">3</span>)
+							</button>
+						</div>
+					</div>
+					<div class="catalog-table__wrapper">
+						<div class="catalog-table">
+							<div class="catalog-table__header">
+								<div class="catalog-table__header-item name">Наименование</div>
+								<div class="catalog-table__header-item du">ДУ</div>
+								<div class="catalog-table__header-item weight">Вес</div>
+								<div class="catalog-table__header-item brand">Марка</div>
+								<div class="catalog-table__header-item gost">Гост</div>
+								<div class="catalog-table__header-item table-counter"></div>
+							</div>
+							<div class="catalog-table__row">
+								<div class="catalog-table__info name">
+									<label class="custom-checkbox">
+	<input type="checkbox" name="privacy" required="">
+	<span class="checkbox">
+		<img src="images/check.svg" alt="#">
+	</span>
+</label>
+									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
+								</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+								<div class="catalog-table__info table-counter">
+									<div class="card-product__counter counter counter-js">
+										<button class="counter__btn decrement-js">
+											<img src="images/minus.svg" alt="minus">
+										</button>
+										<input type="number" class="counter__count value-js" value="0">
+										<button class="counter__btn increment-js">
+											<img src="images/plus.svg" alt="plus">
+										</button>
+									</div>
+									<button class="catalog-table__delete">
+										<span>
+											<svg>
+												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="catalog-table__row">
+								<div class="catalog-table__info name">
+									<label class="custom-checkbox">
+	<input type="checkbox" name="privacy" required="">
+	<span class="checkbox">
+		<img src="images/check.svg" alt="#">
+	</span>
+</label>
+									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
+								</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+								<div class="catalog-table__info table-counter">
+									<div class="card-product__counter counter counter-js">
+										<button class="counter__btn decrement-js">
+											<img src="images/minus.svg" alt="minus">
+										</button>
+										<input type="number" class="counter__count value-js" value="0">
+										<button class="counter__btn increment-js">
+											<img src="images/plus.svg" alt="plus">
+										</button>
+									</div>
+									<button class="catalog-table__delete">
+										<span>
+											<svg>
+												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+							<div class="catalog-table__row">
+								<div class="catalog-table__info name">
+									<label class="custom-checkbox">
+	<input type="checkbox" name="privacy" required="">
+	<span class="checkbox">
+		<img src="images/check.svg" alt="#">
+	</span>
+</label>
+									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
+								</div>
+								<div class="catalog-table__info du">
+									40
+								</div>
+								<div class="catalog-table__info weight">
+									50
+								</div>
+								<div class="catalog-table__info brand">
+									название марки
+								</div>
+								<div class="catalog-table__info gost">
+									ОСТ 36-146-88
+								</div>
+								<div class="catalog-table__info table-counter">
+									<div class="card-product__counter counter counter-js">
+										<button class="counter__btn decrement-js">
+											<img src="images/minus.svg" alt="minus">
+										</button>
+										<input type="number" class="counter__count value-js" value="0">
+										<button class="counter__btn increment-js">
+											<img src="images/plus.svg" alt="plus">
+										</button>
+									</div>
+									<button class="catalog-table__delete">
+										<span>
+											<svg>
+												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
+											</svg>
+										</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-mob">
+							<div class="catalog-table__info name">
+								<label class="custom-checkbox">
+	<input type="checkbox" name="privacy" required="">
+	<span class="checkbox">
+		<img src="images/check.svg" alt="#">
+	</span>
+</label>
+								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
+							</div>
+							<div class="catalog-mob__body">
+								<ul class="catalog-mob__list">
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item du">ДУ</div>
+										<div class="catalog-table__info du">
+											40
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item brand">Марка</div>
+										<div class="catalog-table__info brand">
+											название марки
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item weight">Вес</div>
+										<div class="catalog-table__info weight">
+											50
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item gost">Гост</div>
+										<div class="catalog-table__info gost">
+											ОСТ 36-146-88
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="catalog-mob__price">
+								<button class="catalog-table__delete">
+									<span>
+										<svg>
+											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
+										</svg>
+									</span>
+								</button>
+								<div class="counter-cart">
+									<div class="card-product__counter counter counter-js">
+										<button class="counter__btn decrement-js">
+											<img src="images/minus.svg" alt="minus">
+										</button>
+										<input type="number" class="counter__count value-js" value="0">
+										<button class="counter__btn increment-js">
+											<img src="images/plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-mob">
+							<div class="catalog-table__info name">
+								<label class="custom-checkbox">
+	<input type="checkbox" name="privacy" required="">
+	<span class="checkbox">
+		<img src="images/check.svg" alt="#">
+	</span>
+</label>
+								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
+							</div>
+							<div class="catalog-mob__body">
+								<ul class="catalog-mob__list">
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item du">ДУ</div>
+										<div class="catalog-table__info du">
+											40
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item brand">Марка</div>
+										<div class="catalog-table__info brand">
+											название марки
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item weight">Вес</div>
+										<div class="catalog-table__info weight">
+											50
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item gost">Гост</div>
+										<div class="catalog-table__info gost">
+											ОСТ 36-146-88
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="catalog-mob__price">
+								<button class="catalog-table__delete">
+									<span>
+										<svg>
+											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
+										</svg>
+									</span>
+								</button>
+								<div class="counter-cart">
+									<div class="card-product__counter counter counter-js">
+										<button class="counter__btn decrement-js">
+											<img src="images/minus.svg" alt="minus">
+										</button>
+										<input type="number" class="counter__count value-js" value="0">
+										<button class="counter__btn increment-js">
+											<img src="images/plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-mob">
+							<div class="catalog-table__info name">
+								<label class="custom-checkbox">
+	<input type="checkbox" name="privacy" required="">
+	<span class="checkbox">
+		<img src="images/check.svg" alt="#">
+	</span>
+</label>
+								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
+							</div>
+							<div class="catalog-mob__body">
+								<ul class="catalog-mob__list">
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item du">ДУ</div>
+										<div class="catalog-table__info du">
+											40
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item brand">Марка</div>
+										<div class="catalog-table__info brand">
+											название марки
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item weight">Вес</div>
+										<div class="catalog-table__info weight">
+											50
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item gost">Гост</div>
+										<div class="catalog-table__info gost">
+											ОСТ 36-146-88
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="catalog-mob__price">
+								<button class="catalog-table__delete">
+									<span>
+										<svg>
+											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
+										</svg>
+									</span>
+								</button>
+								<div class="counter-cart">
+									<div class="card-product__counter counter counter-js">
+										<button class="counter__btn decrement-js">
+											<img src="images/minus.svg" alt="minus">
+										</button>
+										<input type="number" class="counter__count value-js" value="0">
+										<button class="counter__btn increment-js">
+											<img src="images/plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="catalog-mob">
+							<div class="catalog-table__info name">
+								<label class="custom-checkbox">
+	<input type="checkbox" name="privacy" required="">
+	<span class="checkbox">
+		<img src="images/check.svg" alt="#">
+	</span>
+</label>
+								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
+							</div>
+							<div class="catalog-mob__body">
+								<ul class="catalog-mob__list">
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item du">ДУ</div>
+										<div class="catalog-table__info du">
+											40
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item brand">Марка</div>
+										<div class="catalog-table__info brand">
+											название марки
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item weight">Вес</div>
+										<div class="catalog-table__info weight">
+											50
+										</div>
+									</li>
+									<li class="catalog-mob__list-item">
+										<div class="catalog-table__header-item gost">Гост</div>
+										<div class="catalog-table__info gost">
+											ОСТ 36-146-88
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="catalog-mob__price">
+								<button class="catalog-table__delete">
+									<span>
+										<svg>
+											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
+										</svg>
+									</span>
+								</button>
+								<div class="counter-cart">
+									<div class="card-product__counter counter counter-js">
+										<button class="counter__btn decrement-js">
+											<img src="images/minus.svg" alt="minus">
+										</button>
+										<input type="number" class="counter__count value-js" value="0">
+										<button class="counter__btn increment-js">
+											<img src="images/plus.svg" alt="plus">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+				<form class="cart-form">
+					<h3 class="cart-form__title">
+						Ваш заказ
+					</h3>
+					<label class="form-contact__label">
+						<h4>Ваше имя</h4>
+						<input type="text" placeholder="Введите имя" class="form-contact__input" minlength="3" required="">
+						<span class="error-text">error text</span>
+					</label>
+
+					<label class="form-contact__label">
+						<h4>e-mail</h4>
+						<input type="email" placeholder="@" class="form-contact__input">
+						<span class="error-text">error text</span>
+					</label>
+
+					<label class="form-contact__label">
+						<h4>Телефон</h4>
+						<input type="tel" placeholder="+7" class="form-contact__input" required="">
+						<span class="error-text">error text</span>
+					</label>
+
+					<label class="form-contact__label">
+						<h4>Прикрепить документ</h4>
+						<input type="file" placeholder="+7" class="form-contact__input hidden-input" required>
+						<div class="form-contact__input div">
+							<p class="file-name-js">Добавить файл</p>
+							<span>
+								<img src="images/attachment.svg" alt="#">
+							</span>
+						</div>
+						<span class="error-text">error text</span>
+					</label>
+
+					<label class="form-contact__label textarea-js">
+						<h4>Сообщение</h4>
+						<textarea class="form-contact__input textarea" placeholder="Введите текст" maxlength="100"></textarea>
+						<p class="length">
+							<span class="length-curent">0</span>
+							/
+							<span class="length-max">100</span>
+						</p>
+					</label>
+
+					<button class="cart-form__submit main-btn">
+						Оформить заявку
+					</button>
+					<p class="cart-form__policy">
+						Нажимая кнопку “оформить заявку”, вы соглашаетесь на обработку персональных данных
+					</p>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -758,9 +1174,9 @@
 	</div>
 </footer>
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240112013705"></script>
-<script src="js/swiper.js?_v=20240112013705"></script>
-<script src="js/main.js?_v=20240112013705"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240115023813"></script>
+<script src="js/swiper.js?_v=20240115023813"></script>
+<script src="js/main.js?_v=20240115023813"></script>
 </body>
 
 </html>
