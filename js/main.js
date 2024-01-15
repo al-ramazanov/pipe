@@ -391,33 +391,68 @@ cartCounter();
 
 function replaceCartBtn() {
   const btnPlace = document.querySelector(".header-slider__container");
-  const btn = document.querySelector(".js-cart");
-  const destination = document.querySelector(".header-bottom-mob__container");
+  if (btnPlace) {
+    const btn = document.querySelector(".js-cart");
+    const destination = document.querySelector(".header-bottom-mob__container");
 
-  if (window.innerWidth <= 768) {
-    destination.append(btn);
-  } else {
-    btnPlace.append(btn);
-  }
-
-  window.addEventListener("resize", (e) => {
     if (window.innerWidth <= 768) {
       destination.append(btn);
     } else {
       btnPlace.append(btn);
     }
-  });
+
+    window.addEventListener("resize", (e) => {
+      if (window.innerWidth <= 768) {
+        destination.append(btn);
+      } else {
+        btnPlace.append(btn);
+      }
+    });
+  }
 }
 replaceCartBtn();
 
 // имя файла в input file
 
 const fileInputs = document.querySelectorAll("input[type='file']");
-fileInputs.forEach((input) => {
-  const text = input.nextElementSibling;
-  const fileName = text.querySelector(".file-name-js");
-  input.addEventListener("input", (e) => {
-    fileName.innerText = e.currentTarget.files[0].name;
+if (fileInputs) {
+  fileInputs.forEach((input) => {
+    const text = input.nextElementSibling;
+    const fileName = text.querySelector(".file-name-js");
+    input.addEventListener("input", (e) => {
+      fileName.innerText = e.currentTarget.files[0].name;
+    });
   });
-});
+}
+
 // имя файла в input file
+
+function openDropdowns() {
+  const dropdowns = document.querySelectorAll("[data-dropdown]");
+  if (dropdowns) {
+    dropdowns.forEach((el) => {
+      const btn = el.querySelector(".questions-accordeon__btn");
+      const body = el.querySelector(".questions-accordeon__body");
+
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.currentTarget.classList.toggle("open");
+        if (btn.classList.contains("open")) {
+          body.classList.add("open");
+        } else {
+          body.classList.remove("open");
+        }
+
+        document.addEventListener("click", (e) => {
+          const withinBoundaries = e.composedPath().includes(el);
+          if (!withinBoundaries) {
+            body.classList.remove("open");
+            btn.classList.remove("open");
+          }
+        });
+      });
+    });
+  }
+}
+
+openDropdowns();
