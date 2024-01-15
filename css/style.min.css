@@ -1414,6 +1414,20 @@ input[type=search]::-webkit-search-cancel-button {
   transform: translate(-50%, -50%);
 }
 
+.benefits__mob-title {
+  color: var(--black-color);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  /* 26.4px */
+  letter-spacing: -0.48px;
+  margin-bottom: 30px;
+  display: none;
+  margin-top: 20px;
+}
+
 .benefits-card {
   display: flex;
   flex-direction: column;
@@ -3697,7 +3711,14 @@ input[type=search]::-webkit-search-cancel-button {
   background: url("../images/conatct-form-pic-bg.svg") left top no-repeat;
 }
 
-.contact-form__pic h3 {
+.contact-form__pic p {
+  color: var(--grey-color);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.contact-form__name {
   color: var(--black-color);
   font-family: Manrope;
   font-size: 20px;
@@ -3705,13 +3726,6 @@ input[type=search]::-webkit-search-cancel-button {
   line-height: 1.2;
   letter-spacing: -0.4px;
   margin-bottom: 7px;
-}
-
-.contact-form__pic p {
-  color: var(--grey-color);
-  font-family: Roboto;
-  font-size: 16px;
-  line-height: 1.4;
 }
 
 .form-contact__subtitle {
@@ -3735,7 +3749,7 @@ input[type=search]::-webkit-search-cancel-button {
   flex: 1 1 48%;
 }
 
-.form-contact__label h4 {
+.form-contact__label-header {
   color: #1a1a1a;
   font-size: 16px;
   line-height: 1.48;
@@ -4077,7 +4091,7 @@ input[type=search]::-webkit-search-cancel-button {
   margin-bottom: 17px;
 }
 
-.card-product__advice-specialist h3 {
+.card-product__advice-specialist-name {
   color: #000;
   font-family: Manrope;
   font-size: 18px;
@@ -4098,7 +4112,7 @@ input[type=search]::-webkit-search-cancel-button {
   margin-bottom: 70px;
 }
 
-.card-product__feature h2 {
+.card-product__feature-title {
   color: var(--black-color);
   font-family: Manrope;
   font-size: 36px;
@@ -4805,7 +4819,7 @@ input[type=search]::-webkit-search-cancel-button {
   border: none;
 }
 
-.interested__swiper .swiper-pagination-bullet-active ::before {
+.interested__swiper .swiper-pagination-bullet-active::before {
   content: "";
   position: absolute;
   display: block;
@@ -4824,6 +4838,20 @@ input[type=search]::-webkit-search-cancel-button {
 
 .interested__swiper:not(:has(.swiper-pagination-lock)) .swiper-pagination {
   bottom: 0;
+}
+
+.interested__content-more {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  /* 20.8px */
+  display: none;
+  text-align: center;
+  width: 100%;
+  color: #fe6a2d;
+  margin-top: 30px;
 }
 
 .produced .section-header__link-decor {
@@ -6009,6 +6037,10 @@ input[type=search]::-webkit-search-cancel-button {
     width: 100%;
   }
 
+  .benefits__mob-title {
+    display: block;
+  }
+
   .team .section-header__link-decor.hidden {
     display: none;
   }
@@ -6251,6 +6283,10 @@ input[type=search]::-webkit-search-cancel-button {
 
   .order {
     padding: 54px 0 72px 0;
+  }
+
+  .order__title {
+    text-align: center;
   }
 
   .order__action {
@@ -6553,6 +6589,14 @@ input[type=search]::-webkit-search-cancel-button {
 
   .services-slide__btn {
     font-size: 14px;
+  }
+
+  .interested .section-header .hidden {
+    display: none;
+  }
+
+  .interested__content-more {
+    display: block;
   }
 
   .questions__subtitle {

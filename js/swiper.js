@@ -169,16 +169,17 @@ const servicesIntro = new Swiper(".services-intro__swiper", {
   // },
 });
 const interestedSwiper = new Swiper(".interested__swiper", {
-  slidesPerView: 1.4,
+  // slidesPerView: 1.4,
+  slidesPerView: "auto",
 
   spaceBetween: 16,
 
-  breakpoints: {
-    380: {
-      slidesPerView: "auto",
-      spaceBetween: 16,
-    },
-  },
+  // breakpoints: {
+  //   380: {
+  //     slidesPerView: "auto",
+  //     spaceBetween: 16,
+  //   },
+  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
