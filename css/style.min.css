@@ -2660,9 +2660,10 @@ input[type=search]::-webkit-search-cancel-button {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
-.option-product__header h3 {
+.option-product__header-title {
   color: var(--black-color);
   font-family: Manrope;
   font-size: 26px;
@@ -4259,7 +4260,7 @@ input[type=search]::-webkit-search-cancel-button {
 .product-tabs__btn {
   position: relative;
   flex: 0 0 auto;
-  padding: 23px 5px;
+  padding: 23px 0;
   color: var(--black-color);
   font-family: Manrope;
   font-size: 18px;
@@ -7133,6 +7134,10 @@ input[type=search]::-webkit-search-cancel-button {
 
   .list-city__item:hover .list-city__link {
     color: #fe6a2d;
+  }
+
+  .option-product__header:hover .product-card__arrow svg {
+    animation: bounceIn 0.5s forwards;
   }
 
   .production-card .product-card__arrow {
