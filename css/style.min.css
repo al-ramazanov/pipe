@@ -651,13 +651,16 @@ input[type=search]::-webkit-search-cancel-button {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #fe6a2d;
+  background-color: #f5f5fa;
   z-index: 2;
   flex: 0 0 auto;
+  transition: 0.3s ease;
 }
 
 .intro-swiper__btn svg {
   display: block;
+  fill: #fe6a2d;
+  transition: 0.3s ease;
 }
 
 .intro-swiper__btn.prev {
@@ -882,7 +885,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .banner {
-  margin-bottom: 70px;
+  margin-bottom: 110px;
 }
 
 .banner__body {
@@ -2033,6 +2036,17 @@ input[type=search]::-webkit-search-cancel-button {
   max-height: 100%;
   overflow-y: auto;
   padding-top: 50px;
+}
+
+.menu__content::-webkit-scrollbar {
+  background-color: #f5f5fa;
+  width: 4px;
+  border-radius: 50px;
+}
+
+.menu__content::-webkit-scrollbar-thumb {
+  background-color: #fe6a2d;
+  border-radius: 50px;
 }
 
 .menu__list {
@@ -3850,13 +3864,14 @@ input[type=search]::-webkit-search-cancel-button {
   display: flex;
   gap: 20px;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 }
 
 .form-contact__action-label {
   cursor: pointer;
   position: relative;
   color: var(--grey-color);
+  margin-top: 5px;
 }
 
 .form-contact__action-label input {
@@ -3890,7 +3905,7 @@ input[type=search]::-webkit-search-cancel-button {
 
 .form-contact__submit {
   flex: 0 0 auto;
-  padding: 12px 52px;
+  padding: 17px 52px;
   color: #fff;
   font-size: 17px;
   font-weight: 500;
@@ -3898,6 +3913,9 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .length {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
   color: var(--Unnamed-Color, #c0c0c0);
   text-align: right;
   font-family: Roboto;
@@ -5082,7 +5100,7 @@ input[type=search]::-webkit-search-cancel-button {
   }
 
   .banner {
-    margin-bottom: calc(30px + 40 * ((100vw - 320px) /1120));
+    margin-bottom: calc(50px + 60 * ((100vw - 320px) /1120));
   }
 
   .banner__text {
@@ -7046,6 +7064,14 @@ input[type=search]::-webkit-search-cancel-button {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .intro-swiper__btn:hover {
+    background-color: #fe6a2d;
+  }
+
+  .intro-swiper__btn:hover svg {
+    fill: #fff;
   }
 
   .section-header__link:hover {
