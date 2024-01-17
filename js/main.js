@@ -66,12 +66,17 @@ document.addEventListener("DOMContentLoaded", (e) => {
   function openMenu(e) {
     const menu = document.querySelector(".menu");
     if (menu) {
+      if (window.innerWidth <= 768) {
+        document.body.style.overflow = "hidden";
+      }
       menu.classList.add("active");
     }
   }
   function closeMenu(e) {
     const menu = document.querySelector(".menu");
     if (menu) {
+      document.body.style.overflow = null;
+
       menu.classList.remove("active");
     }
   }
@@ -83,6 +88,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       btn.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
+        const menu = document.querySelector(".menu");
 
         const svg = btn.querySelector(".svg");
 
@@ -100,21 +106,30 @@ document.addEventListener("DOMContentLoaded", (e) => {
 				</svg>`;
         }
 
-        document.addEventListener("click", (e) => {
-          const menu = document.querySelector(".menu__container");
+        // document.addEventListener("click", (e) => {
+        //   const menu = document.querySelector(".menu__container");
 
-          if (e.target != menu) {
-            closeMenu();
-            btn.classList.remove("active");
-            svg.innerHTML = `<svg>
-							<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
-						</svg>`;
-          }
-        });
+        //   if (e.target != menu) {
+        //     closeMenu();
+        //     btn.classList.remove("active");
+        //     svg.innerHTML = `<svg>
+        // 			<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
+        // 		</svg>`;
+        //   }
+        // });
+
+        // document.addEventListener("click", (e) => {
+        //   const withinBoundaries = e.composedPath().includes(menu);
+        //   if (!withinBoundaries) {
+        //     closeMenu();
+        //     btn.classList.remove("active");
+        //     svg.innerHTML = `<svg>
+        // 			<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
+        // 		</svg>`;
+        //   }
+        // });
 
         document.addEventListener("keydown", (e) => {
-          const menu = document.querySelector(".menu__container");
-
           if (e.key == "Escape") {
             closeMenu();
             btn.classList.remove("active");
@@ -123,9 +138,59 @@ document.addEventListener("DOMContentLoaded", (e) => {
 						</svg>`;
           }
         });
+
+        const closeMenuBtn = document.querySelector(".menu-close-js");
+        if (closeMenuBtn) {
+          closeMenuBtn.addEventListener("click", (e) => {
+            closeMenu();
+            btn.classList.remove("active");
+            svg.innerHTML = `<svg>
+							<use xlink:href='images/svg/icons.svg#catalog-ico'></use>
+						</svg>`;
+          });
+        }
       });
     }
   }
+
+  function openMobDropdowns() {
+    const dropdowns = document.querySelectorAll("[data-spoiler]");
+    if (dropdowns) {
+      if (window.innerWidth <= 768) {
+        dropdowns.forEach((el) => {
+          const btn = el.querySelector("[data-btn]");
+          const content = el.querySelector("[data-body]");
+
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (content) {
+              e.currentTarget.classList.toggle("open");
+              if (btn.classList.contains("open")) {
+                content.classList.add("open");
+              } else {
+                content.classList.remove("open");
+              }
+
+              document.addEventListener("click", (e) => {
+                const withinBoundaries = e.composedPath().includes(el);
+                if (!withinBoundaries) {
+                  if (
+                    btn.classList.contains("open") ||
+                    content.classList.contains("open")
+                  ) {
+                    btn.classList.remove("open");
+                    content.classList.remove("open");
+                  }
+                }
+              });
+            }
+          });
+        });
+      }
+    }
+  }
+
+  openMobDropdowns();
 
   function chooseCity() {
     const block = document.querySelector(".choose-city");

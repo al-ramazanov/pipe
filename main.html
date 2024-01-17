@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Главная</title>
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240116233016" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240117232250" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
-		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240116233016"
+		href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap&_v=20240117232250"
 		rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20240116233016" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240117232250" />
 </head>
 
 <body>
@@ -226,6 +226,21 @@
 	</div>
 	<div class="menu">
 		<div class="menu__container">
+			<div class="menu__mob-header">
+				<a href="./main.html">
+					<img src="images/mob-menu-logo.svg" alt="logo">
+				</a>
+				<a href="tel:+79632752223">+7 (963) 275 22 23</a>
+			</div>
+			<button class="menu__mob-close menu-close-js">
+				<div class="svg">
+					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+						<path d="M1 1L9.5 9.5M18 18L9.5 9.5M9.5 9.5L18 1M9.5 9.5L1 18" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round"></path>
+					</svg>
+				</div>
+				Каталог
+			</button>
 			<div class="menu__content">
 				<ul class="menu__list">
 					<li class="menu__item">
@@ -233,11 +248,11 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-1.png" alt="Трубы и фитинги ППУ">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Трубы и фитинги ППУ
 								</div>
-								<ul class="menu__card-list">
+								<ul class="menu__card-list" data-body>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Трубы ПНД ППУ</a>
 									</li>
@@ -253,6 +268,9 @@
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Фасонные изделия ППУ</a>
 									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link more">Смотреть все</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -262,8 +280,8 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-1.png" alt="Трубы оболочки">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Трубы оболочки
 								</div>
 							</div>
@@ -274,11 +292,11 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-3.png" alt="Подвески трубопроводов">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Подвески трубопроводов
 								</div>
-								<ul class="menu__card-list">
+								<ul class="menu__card-list" data-body>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">ГОСТ 16127-78</a>
 									</li>
@@ -303,6 +321,9 @@
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">ГОСТ 24.125.1ХХ-01</a>
 									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link more">Смотреть все</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -312,16 +333,19 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-4.png" alt="Трубы ВУС/УС">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Трубы ВУС/УС
 								</div>
-								<ul class="menu__card-list">
+								<ul class="menu__card-list" data-body>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Трубы стальные в 2-х слойной ВУС изоляции</a>
 									</li>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Трубы стальные в 3-х слойной ВУС изоляции</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link more">Смотреть все</a>
 									</li>
 								</ul>
 							</div>
@@ -332,11 +356,11 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-4.png" alt="Трубы и фитинги ППМ">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Трубы и фитинги ППМ
 								</div>
-								<ul class="menu__card-list">
+								<ul class="menu__card-list" data-body>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">
 											Трубы ППМ
@@ -357,6 +381,9 @@
 											Фасонные изделия
 										</a>
 									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link more">Смотреть все</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -366,16 +393,19 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-4.png" alt="Трубы ВУС/УС">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Трубы ВУС/УС
 								</div>
-								<ul class="menu__card-list">
+								<ul class="menu__card-list" data-body>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Трубы стальные в 2-х слойной ВУС изоляции</a>
 									</li>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Трубы стальные в 3-х слойной ВУС изоляции</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link more">Смотреть все</a>
 									</li>
 								</ul>
 							</div>
@@ -386,11 +416,11 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-1.png" alt="Трубы и фитинги ППУ">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Трубы и фитинги ППУ
 								</div>
-								<ul class="menu__card-list">
+								<ul class="menu__card-list" data-body>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Трубы ПНД ППУ</a>
 									</li>
@@ -406,6 +436,9 @@
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">Фасонные изделия ППУ</a>
 									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link more">Смотреть все</a>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -415,8 +448,8 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-1.png" alt="Трубы оболочки">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Трубы оболочки
 								</div>
 							</div>
@@ -427,11 +460,11 @@
 							<div class="menu__card-pic">
 								<img src="images/menu-pic-3.png" alt="Подвески трубопроводов">
 							</div>
-							<div class="menu__card-content">
-								<div class="menu__card-title">
+							<div class="menu__card-content" data-spoiler>
+								<div class="menu__card-title" data-btn>
 									Подвески трубопроводов
 								</div>
-								<ul class="menu__card-list">
+								<ul class="menu__card-list" data-body>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">ГОСТ 16127-78</a>
 									</li>
@@ -455,6 +488,9 @@
 									</li>
 									<li class="menu__card-item">
 										<a href="#" class="menu__card-link">ГОСТ 24.125.1ХХ-01</a>
+									</li>
+									<li class="menu__card-item">
+										<a href="#" class="menu__card-link more">Смотреть все</a>
 									</li>
 								</ul>
 							</div>
@@ -630,7 +666,7 @@
 				</article>
 				<article class="products__item product-card">
 					<div class="product-card__pic">
-						<img src="images/product-4.svg" alt="Трубы ВУС/УС" class="product-card__img">
+						<img src="images/product-4.png" alt="Трубы ВУС/УС" class="product-card__img">
 						<a href="#" class="product-card__arrow">
 							<svg>
 								<use xlink:href='images/svg/icons.svg#card-arrow'></use>
@@ -1675,11 +1711,11 @@
 			<button class="article__btn main-btn">
 				Написать сообщение директору
 			</button>
-			</di>
-			<div class="article__pic">
-				<img src="images/article.png" alt="#">
-			</div>
 		</div>
+		<div class="article__pic">
+			<img src="images/article.png" alt="#">
+		</div>
+	</div>
 </section>
 </main>
 <footer class="footer">
@@ -1896,9 +1932,9 @@
 	</div>
 </footer>
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240116233016"></script>
-<script src="js/swiper.js?_v=20240116233016"></script>
-<script src="js/main.js?_v=20240116233016"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20240117232250"></script>
+<script src="js/swiper.js?_v=20240117232250"></script>
+<script src="js/main.js?_v=20240117232250"></script>
 </body>
 
 </html>
