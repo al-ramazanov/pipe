@@ -1209,6 +1209,7 @@ input[type=search]::-webkit-search-cancel-button {
 .about__card-img {
   max-width: 100%;
   align-self: flex-end;
+  margin-right: -10px;
 }
 
 .about__card-decor {
