@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Корзина</title>
+	<title>Каталог</title>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240120152108" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
 </body>
 
 </html>
-<header class="header cart-header">
+<header class="header catalog-page-header">
 	<div class="header-top">
 		<div class="header__container">
 			<div class="header-top__city">
@@ -525,471 +525,271 @@
 		</div>
 	</div>
 </header>
-<main class="main cart">
+<main class="main catalog-page">
 	<div class="breadcrumbs">
 		<div class="breadcrumbs__container">
 			<ul class="breadcrumbs__list">
 				<li class="breadcrumbs__list-item">
-					<a href="#" class="breadcrumbs__link">Главная</a>
+					<a href="./main.html" class="breadcrumbs__link">Главная</a>
 				</li>
 				<li class="breadcrumbs__list-item">
-					<a href="./cart.html" class="breadcrumbs__link">Корзина</a>
+					<a href="./services-page.html" class="breadcrumbs__link">Услуги</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="cart-content">
-		<div class="cart-content__container">
-			<div class="cart-content__title">
-				Корзина
-			</div>
-			<div class="cart-content__wrapper">
-				<div class="cart-content__left">
-					<div class="cart-content__info cart-info">
-						<div class="cart-info__items">
-							<ul class="cart-info__list">
-								<li class="cart-info__qty">12 товара</li>
-								<li class="cart-info__weight">Вес - 100кг</li>
-							</ul>
-							<button class="cart-info__select">
-								<label>
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									Выбрать все
-								</label>
-							</button>
-							<button class="cart-info__delete">
-								Удалить (<span class="cart-info__delete-counter">3</span>)
-							</button>
-						</div>
+	<div class="service-page__container">
+		<div class="page-title">
+			Услуги
+		</div>
+		<div class="products__wrapper">
+			<div class="products__items">
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-1.svg" alt="Трубы и фитинги ППУ" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
 					</div>
-					<div class="catalog-table__wrapper">
-						<div class="catalog-table">
-							<div class="catalog-table__header">
-								<div class="catalog-table__header-item name">Наименование</div>
-								<div class="catalog-table__header-item du">ДУ</div>
-								<div class="catalog-table__header-item weight">Вес</div>
-								<div class="catalog-table__header-item brand">Марка</div>
-								<div class="catalog-table__header-item gost">Гост</div>
-								<div class="catalog-table__header-item table-counter"></div>
-							</div>
-							<div class="catalog-table__row">
-								<div class="catalog-table__info name">
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-								</div>
-								<div class="catalog-table__info du">
-									40
-								</div>
-								<div class="catalog-table__info weight">
-									50
-								</div>
-								<div class="catalog-table__info brand">
-									название марки
-								</div>
-								<div class="catalog-table__info gost">
-									ОСТ 36-146-88
-								</div>
-								<div class="catalog-table__info table-counter">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-									<button class="catalog-table__delete">
-										<span>
-											<svg>
-												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-											</svg>
-										</span>
-									</button>
-								</div>
-							</div>
-							<div class="catalog-table__row">
-								<div class="catalog-table__info name">
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-								</div>
-								<div class="catalog-table__info du">
-									40
-								</div>
-								<div class="catalog-table__info weight">
-									50
-								</div>
-								<div class="catalog-table__info brand">
-									название марки
-								</div>
-								<div class="catalog-table__info gost">
-									ОСТ 36-146-88
-								</div>
-								<div class="catalog-table__info table-counter">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-									<button class="catalog-table__delete">
-										<span>
-											<svg>
-												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-											</svg>
-										</span>
-									</button>
-								</div>
-							</div>
-							<div class="catalog-table__row">
-								<div class="catalog-table__info name">
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-								</div>
-								<div class="catalog-table__info du">
-									40
-								</div>
-								<div class="catalog-table__info weight">
-									50
-								</div>
-								<div class="catalog-table__info brand">
-									название марки
-								</div>
-								<div class="catalog-table__info gost">
-									ОСТ 36-146-88
-								</div>
-								<div class="catalog-table__info table-counter">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-									<button class="catalog-table__delete">
-										<span>
-											<svg>
-												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-											</svg>
-										</span>
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы и фитинги ППУ
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы ПНД ППУ</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы с греющим кабелем</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы Твин</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
 					</div>
-				</div>
-				<form class="cart-form">
-					<div class="cart-form__title">
-						Ваш заказ
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-2.svg" alt="Трубы и фитинги ППУ" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
 					</div>
-					<label class="form-contact__label">
-						<h4>Ваше имя</h4>
-						<input type="text" placeholder="Введите имя" class="form-contact__input" minlength="3" required="">
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label">
-						<h4>e-mail</h4>
-						<input type="email" placeholder="@" class="form-contact__input">
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label">
-						<h4>Телефон</h4>
-						<input type="tel" placeholder="+7" class="form-contact__input" required="">
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label">
-						<h4>Прикрепить документ</h4>
-						<input type="file" placeholder="+7" class="form-contact__input hidden-input" required>
-						<div class="form-contact__input div">
-							<p class="file-name-js">Добавить файл</p>
-							<span>
-								<img src="images/attachment.svg" alt="#">
-							</span>
-						</div>
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label textarea-js">
-						<h4>Сообщение</h4>
-						<textarea class="form-contact__input textarea" placeholder="Введите текст" maxlength="100"></textarea>
-						<p class="length">
-							<span class="length-curent">0</span>
-							/
-							<span class="length-max">100</span>
-						</p>
-					</label>
-
-					<button class="cart-form__submit main-btn">
-						Оформить заявку
-					</button>
-					<p class="cart-form__policy">
-						Нажимая кнопку “оформить заявку”, вы соглашаетесь на обработку персональных данных
-					</p>
-				</form>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы и фитинги ППУ
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы ПНД ППУ</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы с греющим кабелем</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">Трубы Твин</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-3.svg" alt="Трубы оболочки" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы оболочки
+						</h3>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-4.png" alt="Трубы ВУС/УС" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Трубы ВУС/УС
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Трубы стальные в 2-х слойной ВУС изоляции
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Трубы стальные в 3-х слойной ВУС изоляции
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-5.svg" alt="Подвески трубопроводов" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Подвески трубопроводов
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ГОСТ 16127-78
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Серия 4.903-10 вып. 6
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Серия 5.903-13 вып. 6-95
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-6.svg" alt="Пружинные блоки" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Пружинные блоки
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ОСТ 34-10-743-93
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ОСТ 34-10-744-93
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									ОСТ 34-10-745-93
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-7.svg" alt="Кожухи фланцевые КЗФ" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Кожухи фланцевые КЗФ
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Кожухи защитные КЗФ
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Кожухи нержавеющие КЗФ
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Кожухи фланцевые КЗС
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
+				<article class="products__item product-card">
+					<div class="product-card__pic">
+						<img src="images/product-8.svg" alt="Закладные детали" class="product-card__img">
+						<a href="#" class="product-card__arrow">
+							<svg>
+								<use xlink:href="images/svg/icons.svg#card-arrow"></use>
+							</svg>
+						</a>
+					</div>
+					<div class="product-card__body">
+						<h3 class="product-card__title">
+							Закладные детали
+						</h3>
+						<ul class="product-card__list">
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Закладные детали по серии 1.400-15
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Закладные детали по серии 3.400 - 6/76
+								</a>
+							</li>
+							<li class="product-card__item">
+								<a href="#" class="product-card__item-link">
+									Закладные детали - серия 1.400-6/76 вып...
+								</a>
+							</li>
+						</ul>
+						<a href="#" class="product-card__link">
+							Смотреть все
+						</a>
+					</div>
+				</article>
 			</div>
 		</div>
 	</div>

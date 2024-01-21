@@ -521,3 +521,29 @@ function openDropdowns() {
 }
 
 openDropdowns();
+
+function copyText() {
+  const btns = document.querySelectorAll("[data-copy-btn]");
+  if (btns) {
+    btns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        navigator.clipboard
+          .writeText(btn.querySelector("[data-copy]").innerText)
+          .then(function () {
+            console.log("copied");
+            btn.querySelector(".tooltip").classList.add("active");
+            setTimeout(() => {
+              btn.querySelector(".tooltip").classList.remove("active");
+            }, 1000);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      });
+    });
+  }
+}
+
+copyText();

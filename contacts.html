@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Корзина</title>
+	<title>Контакты</title>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240120152108" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
 </body>
 
 </html>
-<header class="header cart-header">
+<header class="header contacts-header">
 	<div class="header-top">
 		<div class="header__container">
 			<div class="header-top__city">
@@ -525,472 +525,282 @@
 		</div>
 	</div>
 </header>
-<main class="main cart">
+<main class="main contacts">
 	<div class="breadcrumbs">
 		<div class="breadcrumbs__container">
 			<ul class="breadcrumbs__list">
 				<li class="breadcrumbs__list-item">
-					<a href="#" class="breadcrumbs__link">Главная</a>
+					<a href="./main.html" class="breadcrumbs__link">Главная</a>
 				</li>
 				<li class="breadcrumbs__list-item">
-					<a href="./cart.html" class="breadcrumbs__link">Корзина</a>
+					<a href="./contacts.html" class="breadcrumbs__link">Контакты</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<div class="cart-content">
-		<div class="cart-content__container">
-			<div class="cart-content__title">
-				Корзина
-			</div>
-			<div class="cart-content__wrapper">
-				<div class="cart-content__left">
-					<div class="cart-content__info cart-info">
-						<div class="cart-info__items">
-							<ul class="cart-info__list">
-								<li class="cart-info__qty">12 товара</li>
-								<li class="cart-info__weight">Вес - 100кг</li>
-							</ul>
-							<button class="cart-info__select">
-								<label>
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									Выбрать все
-								</label>
-							</button>
-							<button class="cart-info__delete">
-								Удалить (<span class="cart-info__delete-counter">3</span>)
-							</button>
-						</div>
+	<div class="contacts__container">
+		<div class="contacts__title">
+			Контакты
+		</div>
+		<ul class="contacts__cards">
+			<li class="contacts__card">
+				<div class="contacts__card-pic">
+					<img src="images/pin-drop.svg" alt="#">
+				</div>
+				<div class="contacts__card-text">
+					<div class="contacts__card-title">
+						Адрес
 					</div>
-					<div class="catalog-table__wrapper">
-						<div class="catalog-table">
-							<div class="catalog-table__header">
-								<div class="catalog-table__header-item name">Наименование</div>
-								<div class="catalog-table__header-item du">ДУ</div>
-								<div class="catalog-table__header-item weight">Вес</div>
-								<div class="catalog-table__header-item brand">Марка</div>
-								<div class="catalog-table__header-item gost">Гост</div>
-								<div class="catalog-table__header-item table-counter"></div>
-							</div>
-							<div class="catalog-table__row">
-								<div class="catalog-table__info name">
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-								</div>
-								<div class="catalog-table__info du">
-									40
-								</div>
-								<div class="catalog-table__info weight">
-									50
-								</div>
-								<div class="catalog-table__info brand">
-									название марки
-								</div>
-								<div class="catalog-table__info gost">
-									ОСТ 36-146-88
-								</div>
-								<div class="catalog-table__info table-counter">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-									<button class="catalog-table__delete">
-										<span>
-											<svg>
-												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-											</svg>
-										</span>
-									</button>
-								</div>
-							</div>
-							<div class="catalog-table__row">
-								<div class="catalog-table__info name">
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-								</div>
-								<div class="catalog-table__info du">
-									40
-								</div>
-								<div class="catalog-table__info weight">
-									50
-								</div>
-								<div class="catalog-table__info brand">
-									название марки
-								</div>
-								<div class="catalog-table__info gost">
-									ОСТ 36-146-88
-								</div>
-								<div class="catalog-table__info table-counter">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-									<button class="catalog-table__delete">
-										<span>
-											<svg>
-												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-											</svg>
-										</span>
-									</button>
-								</div>
-							</div>
-							<div class="catalog-table__row">
-								<div class="catalog-table__info name">
-									<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-									<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-								</div>
-								<div class="catalog-table__info du">
-									40
-								</div>
-								<div class="catalog-table__info weight">
-									50
-								</div>
-								<div class="catalog-table__info brand">
-									название марки
-								</div>
-								<div class="catalog-table__info gost">
-									ОСТ 36-146-88
-								</div>
-								<div class="catalog-table__info table-counter">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-									<button class="catalog-table__delete">
-										<span>
-											<svg>
-												<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-											</svg>
-										</span>
-									</button>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="catalog-mob">
-							<div class="catalog-table__info name">
-								<label class="custom-checkbox">
-	<input type="checkbox" name="privacy" required="">
-	<span class="checkbox">
-		<img src="images/check.svg" alt="#">
-	</span>
-</label>
-								<p>Опора вертикальных трубопроводов тип 133-ВП-А2 ОСТ 36-146-88</p>
-							</div>
-							<div class="catalog-mob__body">
-								<ul class="catalog-mob__list">
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item du">ДУ</div>
-										<div class="catalog-table__info du">
-											40
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item brand">Марка</div>
-										<div class="catalog-table__info brand">
-											название марки
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item weight">Вес</div>
-										<div class="catalog-table__info weight">
-											50
-										</div>
-									</li>
-									<li class="catalog-mob__list-item">
-										<div class="catalog-table__header-item gost">Гост</div>
-										<div class="catalog-table__info gost">
-											ОСТ 36-146-88
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="catalog-mob__price">
-								<button class="catalog-table__delete">
-									<span>
-										<svg>
-											<use xlink:href='images/svg/icons.svg#delete-alt'></use>
-										</svg>
-									</span>
-								</button>
-								<div class="counter-cart">
-									<div class="card-product__counter counter counter-js">
-										<button class="counter__btn decrement-js">
-											<img src="images/minus.svg" alt="minus">
-										</button>
-										<input type="number" class="counter__count value-js" value="0">
-										<button class="counter__btn increment-js">
-											<img src="images/plus.svg" alt="plus">
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
+					<p class="contacts__card-subtitle">
+						<a target="_blank" href="https://yandex.ru/maps/-/CCUjMITcHC">г. Москва, пр-т Маршала Жукова, 2</a>
+					</p>
+				</div>
+			</li>
+			<li class="contacts__card">
+				<div class="contacts__card-pic">
+					<img src="images/open-mail.svg" alt="#">
+				</div>
+				<div class="contacts__card-text">
+					<div class="contacts__card-title">
+						Напишите нам
+					</div>
+					<p class="contacts__card-subtitle">
+						<a href="mailto:info+1201950@pipe-ppu.ru">info+1201950@pipe-ppu.ru</a>
+					</p>
+				</div>
+			</li>
+			<li class="contacts__card">
+				<div class="contacts__card-pic">
+					<img src="images/phone.svg" alt="#">
+				</div>
+				<div class="contacts__card-text">
+					<div class="contacts__card-title">
+						Позвоните нам
+					</div>
+					<p class="contacts__card-subtitle">
+						<a href="tel:+74995215428">8 (499) 521-54-28</a>
+					</p>
+				</div>
+			</li>
+			<li class="contacts__card">
+				<div class="contacts__card-pic">
+					<img src="images/clock-alt-2.svg" alt="#">
+				</div>
+				<div class="contacts__card-text">
+					<div class="contacts__card-title">
+						Мы работаем
+					</div>
+					<p class="contacts__card-subtitle">
+						Пн-Пт с 9:00 до 18:00
+					</p>
+				</div>
+			</li>
+		</ul>
+		<div class="contacts__wrapper">
+			<form class="contacts__form contacts-form">
+				<div class="contacts-form__title">
+					Обратная связь
+				</div>
+				<label class="form-contact__label">
+					<div class="form-contact__label-header">ФИО</div>
+					<input type="text" placeholder="Как к Вам обращаться" class="form-contact__input" minlength="3" required>
+					<span class="error-text">error text</span>
+				</label>
+				<label class="form-contact__label">
+					<div class="form-contact__label-header">E-mail</div>
+					<input type="email" placeholder="@" class="form-contact__input">
+					<span class="error-text">error text</span>
+				</label>
+				<label class="form-contact__label textarea-js">
+					<div class="form-contact__label-header">Введите сообщение</div>
+					<textarea class="form-contact__input textarea" placeholder="Напишите текст"></textarea>
+				</label>
+				<div class="contacts-form__btn">
+					<button class="contacts-form__submit main-btn">Отправить</button>
+					<div class="form-contact__action-wrap">
+						<label class="form-contact__action-label">
+							<input type="checkbox" name="privacy" required>
+							<span class="checkbox">
+								<img src="images/check.svg" alt="#">
+							</span>
+						</label>
+						<span class="privacy-text">Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и
+							<a href="#">политикой конфеденциальности</a></span>
 					</div>
 				</div>
-				<form class="cart-form">
-					<div class="cart-form__title">
-						Ваш заказ
-					</div>
-					<label class="form-contact__label">
-						<h4>Ваше имя</h4>
-						<input type="text" placeholder="Введите имя" class="form-contact__input" minlength="3" required="">
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label">
-						<h4>e-mail</h4>
-						<input type="email" placeholder="@" class="form-contact__input">
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label">
-						<h4>Телефон</h4>
-						<input type="tel" placeholder="+7" class="form-contact__input" required="">
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label">
-						<h4>Прикрепить документ</h4>
-						<input type="file" placeholder="+7" class="form-contact__input hidden-input" required>
-						<div class="form-contact__input div">
-							<p class="file-name-js">Добавить файл</p>
-							<span>
-								<img src="images/attachment.svg" alt="#">
-							</span>
-						</div>
-						<span class="error-text">error text</span>
-					</label>
-
-					<label class="form-contact__label textarea-js">
-						<h4>Сообщение</h4>
-						<textarea class="form-contact__input textarea" placeholder="Введите текст" maxlength="100"></textarea>
-						<p class="length">
-							<span class="length-curent">0</span>
-							/
-							<span class="length-max">100</span>
-						</p>
-					</label>
-
-					<button class="cart-form__submit main-btn">
-						Оформить заявку
-					</button>
-					<p class="cart-form__policy">
-						Нажимая кнопку “оформить заявку”, вы соглашаетесь на обработку персональных данных
-					</p>
-				</form>
+			</form>
+			<div class="contacts__map">
+				<div class="yandex-map" style="position:relative;overflow:hidden;">
+					<a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+						style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+					<a href="https://yandex.ru/maps/213/moscow/house/prospekt_marshala_zhukova_2/Z04YcwdkTUABQFtvfXt2dn9rZw==/?ll=37.504457%2C55.777383&utm_medium=mapframe&utm_source=maps&z=16"
+						style="color:#eee;font-size:12px;position:absolute;top:14px;">
+						Проспект Маршала Жукова, 2 — Яндекс Карты
+					</a>
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?ll=37.504457%2C55.777383&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjkzMzMzOBJL0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINC_0YDQvtGB0L_QtdC60YIg0JzQsNGA0YjQsNC70LAg0JbRg9C60L7QstCwLCAyIgoNkQQWQhUKHF9C&z=16"
+						width="100%" height="100%" allowfullscreen="true" style="position:relative; border: none;">
+					</iframe>
+				</div>
 			</div>
+		</div>
+		<div class="contacts__title">
+			Реквизиты организации
+		</div>
+		<div class="contacts__download">
+			<a href="#" download class="contacts__download-link">
+				Скачать PDF
+				<img src="images/file-download.svg" alt="#">
+			</a>
+		</div>
+		<div class="contacts__details contacts-details">
+			<ul class="contacts-details__list">
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							Полное наименование
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>Общество с ограниченной ответственностью «ООО»</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							Директор (на основании Устава)
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>Иван Иванович Иванов</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							Юридический адрес
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy="">640000, г. Москва, пр-т Маршала Жукова, 2</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							ИНН/КПП
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>450ХХХХ258/450101001</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							Расчетный счет
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>4070281ХХХХ270000385</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							Корреспондентский счет
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>30101810ХХХ777100812</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							БИК
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>0471ХХХ12</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							Телефон
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>8 (499) 521-54-28</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							E-mail
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>info+1201950@pipe-ppu.ru</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+						</p>
+					</button>
+				</li>
+				<li class="contacts-details__item">
+					<button class="contacts-details__copy-btn" data-copy-btn>
+						<div class="contacts-details__title">
+							Веб-сайт
+						</div>
+						<p class="contacts-details__text">
+							<span data-copy>pipe-ppu.ru</span>
+							<svg>
+								<use xlink:href='images/svg/icons.svg#file-copy'></use>
+							</svg>
+							<span class="tooltip">Скопированно</span>
+						</p>
+					</button>
+				</li>
+			</ul>
 		</div>
 	</div>
 </main>
