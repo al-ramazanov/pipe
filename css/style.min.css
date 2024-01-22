@@ -4247,6 +4247,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .counter {
+  flex-grow: 1;
   display: flex;
   border-radius: 10px;
   border: 1px solid #ececec;
@@ -4271,7 +4272,7 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .counter__btn {
-  flex: 0 0 73px;
+  flex: 1 0 73px;
   height: 72px;
   display: flex;
   align-items: center;
@@ -5377,6 +5378,7 @@ input[type=search]::-webkit-search-cancel-button {
   display: flex;
   align-items: start;
   gap: 16px;
+  margin-bottom: 124px;
 }
 
 .news-article {
@@ -5386,7 +5388,6 @@ input[type=search]::-webkit-search-cancel-button {
   padding: 26px 32px 43px 26px;
   border-radius: 25px;
   background-color: #f5f5fa;
-  margin-bottom: 124px;
 }
 
 .news-article__pic {
@@ -5925,7 +5926,7 @@ input[type=search]::-webkit-search-cancel-button {
     margin-bottom: calc(30px + 40 * ((100vw - 320px) /1120));
   }
 
-  .news-article {
+  .news-header {
     margin-bottom: calc(50px + 74 * ((100vw - 320px) /1120));
   }
 
@@ -6339,6 +6340,10 @@ input[type=search]::-webkit-search-cancel-button {
 
   .contacts-form .form-contact__label {
     flex: 1 1 48%;
+  }
+
+  .news-article {
+    padding: 20px;
   }
 }
 
@@ -7250,6 +7255,12 @@ input[type=search]::-webkit-search-cancel-button {
     max-width: 127px;
   }
 
+  .cart .counter-cart {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .cart .name {
     gap: 18px;
   }
@@ -7419,6 +7430,22 @@ input[type=search]::-webkit-search-cancel-button {
     aspect-ratio: 1;
   }
 
+  .news-header {
+    flex-wrap: wrap;
+  }
+
+  .news-subscribe {
+    flex: 1 1 auto;
+  }
+
+  .news-subscribe__title {
+    padding-top: 0px;
+  }
+
+  .news-subscribe__label {
+    margin-bottom: 20px;
+  }
+
   .news-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 17px;
@@ -7448,6 +7475,11 @@ input[type=search]::-webkit-search-cancel-button {
 
   .news-list__item .product-card__arrow {
     flex: 0 0 42px;
+  }
+
+  .news-list__item .product-card__arrow svg {
+    width: 22px;
+    height: 22px;
   }
 }
 
