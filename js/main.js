@@ -547,3 +547,52 @@ function copyText() {
 }
 
 copyText();
+
+function openModal() {
+  const btns = document.querySelectorAll(".open-popup-js");
+  const popupsWrapper = document.querySelector(".popup");
+  if (btns && popupsWrapper) {
+    const closeBtns = document.querySelectorAll(".popup__close");
+    btns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const btnID = e.currentTarget.dataset.id;
+        const popup = document.querySelector(`#${btnID}`);
+        popupsWrapper.classList.add("active");
+        popup.classList.add("active");
+        document.body.classList.add("lock");
+        document.addEventListener("click", (e) => {
+          if (e.target == popupsWrapper && popup.classList.contains("active")) {
+            popupsWrapper.classList.remove("active");
+            popup.classList.remove("active");
+            document.body.classList.remove("lock");
+          }
+        });
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") {
+            popupsWrapper.classList.remove("active");
+            popup.classList.remove("active");
+            document.body.classList.remove("lock");
+          }
+        });
+
+        if (closeBtns) {
+          closeBtns.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+              e.preventDefault();
+              if (
+                popupsWrapper.classList.contains("active") ||
+                popup.classList.contains("active")
+              ) {
+                popupsWrapper.classList.remove("active");
+                popup.classList.remove("active");
+                document.body.classList.remove("lock");
+              }
+            });
+          });
+        }
+      });
+    });
+  }
+}
+openModal();

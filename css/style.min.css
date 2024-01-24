@@ -31,13 +31,13 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
-  height: 100%;
   line-height: normal;
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -86,12 +86,12 @@ input[type=search]::-webkit-search-cancel-button {
 }
 
 .wrapper {
-  overflow: hidden;
-  position: relative;
   min-height: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .main {
@@ -131,6 +131,10 @@ input[type=search]::-webkit-search-cancel-button {
 
 .pages a:nth-child(3n) {
   background: linear-gradient(4deg, #5462c3, #ba872c);
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 .main-btn {
@@ -5686,6 +5690,200 @@ input[type=search]::-webkit-search-cancel-button {
   max-width: 100%;
 }
 
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+  transition: 0.4s linear;
+}
+
+.popup.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 100;
+}
+
+.popup__close {
+  float: right;
+  position: relative;
+  z-index: 3;
+}
+
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max-content;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #fff;
+  overflow: auto;
+  opacity: 0;
+  transition: 0.2s linear;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.popup__content.active {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.popup__content.director {
+  top: 0;
+  transform: translate(-50%, 2%);
+}
+
+.popup__content.offer {
+  top: 0%;
+  transform: translate(-50%, 2%);
+}
+
+.popup__title {
+  color: var(--black-color);
+  font-family: Manrope;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.64px;
+}
+
+.popup__text {
+  color: var(--grey-color);
+  line-height: 1.3;
+  font-size: 16px;
+}
+
+.popup-succes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 546px;
+}
+
+.popup-succes__title {
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.popup-succes__text {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.popup-succes__pic {
+  max-width: 100%;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.popup-succes__btn {
+  padding: 25px 77px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #fff;
+  font-size: 14px;
+}
+
+.popup-order {
+  max-width: 748px;
+  padding: 0 50px;
+  padding-bottom: 18px;
+}
+
+.popup-order.active {
+  display: block;
+}
+
+.popup-order__header {
+  padding-top: 70px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+.popup-order__text {
+  max-width: 413px;
+}
+
+.popup-order__text .popup__text {
+  max-width: 332px;
+}
+
+.popup-order__title {
+  margin-bottom: 21px;
+}
+
+.popup-order__pic {
+  flex: 0 0 164px;
+  height: 164px;
+  overflow: hidden;
+  border-radius: 100%;
+  background-color: #f5f5fa;
+  text-align: center;
+}
+
+.popup-order .form-contact__wrapper {
+  row-gap: 19px;
+}
+
+.popup-order .form-contact__label {
+  flex: 1 0 30%;
+}
+
+.popup-order .form-contact__submit {
+  padding: 25px 94px;
+}
+
+.popup-order .privacy-text {
+  font-size: 12px;
+}
+
+.popup-director {
+  max-width: 748px;
+  padding: 0 50px;
+  padding-bottom: 18px;
+}
+
+.popup-director .popup-order__pic {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.popup-callback {
+  padding: 58px 30px;
+  max-width: 748px;
+}
+
+.popup-callback__pic {
+  width: 164px;
+  height: 164px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.popup-callback__title {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.popup-offer .form-contact__label {
+  flex: 1 0 47%;
+}
+
 @media screen and (min-width: 640px) {
   .news__items .swiper-slide {
     width: initial;
@@ -6085,6 +6283,14 @@ input[type=search]::-webkit-search-cancel-button {
 
   .news-one .news-article__title {
     font-size: calc(26px + 14 * ((100vw - 320px) /1120));
+  }
+
+  .popup__title {
+    font-size: calc(26px + 6 * ((100vw - 320px) /1120));
+  }
+
+  .popup__text {
+    font-size: calc(14px + 2 * ((100vw - 320px) /1120));
   }
 }
 
@@ -7664,6 +7870,45 @@ input[type=search]::-webkit-search-cancel-button {
   .news-one-pic {
     margin-bottom: 30px;
   }
+
+  .popup__content {
+    width: 90%;
+  }
+
+  .popup-succes {
+    min-height: initial;
+    padding: 50px 0;
+  }
+
+  .popup-order {
+    padding: 0;
+  }
+
+  .popup-order__pic {
+    flex-basis: 100px;
+    height: 100px;
+  }
+
+  .popup-order__pic img {
+    max-width: 100%;
+  }
+
+  .popup-order .form-contact__label {
+    flex: 1 0 40%;
+  }
+
+  .popup-director {
+    padding: 0;
+  }
+
+  .popup-callback {
+    padding: 30px 0;
+  }
+
+  .popup-callback__pic {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 768px) and (max-width: 1440px) {
@@ -7766,6 +8011,48 @@ input[type=search]::-webkit-search-cancel-button {
     padding-bottom: 55px;
     border-bottom: 1px solid #d9d9d9;
     border-radius: 0;
+  }
+
+  .popup__content {
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .popup__content.director {
+    transform: none;
+  }
+
+  .popup__content.offer {
+    transform: none;
+  }
+
+  .popup-order__header {
+    display: block;
+  }
+
+  .popup-order__text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .popup-order__text .popup__text {
+    max-width: 100%;
+  }
+
+  .popup-order__pic {
+    display: none;
+  }
+
+  .popup-order .form-contact__label {
+    flex: 1 1 100%;
+  }
+
+  .popup-director .popup-order__pic {
+    display: none;
   }
 }
 
@@ -7920,6 +8207,10 @@ input[type=search]::-webkit-search-cancel-button {
 
   .product-documentation__card {
     padding: 10px 7px;
+  }
+
+  .popup-succes__btn {
+    padding: 15px 35px;
   }
 }
 
@@ -8292,5 +8583,23 @@ input[type=search]::-webkit-search-cancel-button {
 
   .contacts-details__copy-btn:hover::before {
     opacity: 1;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .popup__content {
+    top: 0;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .popup-order__header {
+    padding-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  .popup-order .form-contact__wrapper {
+    margin-bottom: 30px;
   }
 }

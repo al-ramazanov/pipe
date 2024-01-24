@@ -5,7 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Услуги</title>
+	<title>Новости</title>
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20240125005832" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
 </body>
 
 </html>
-<header class="header services-page-header">
+<header class="header news-page-header">
 	<div class="header-top">
 		<div class="header__container">
 			<div class="header-top__city">
@@ -525,159 +525,295 @@
 		</div>
 	</div>
 </header>
-<main class="main service-page">
-	<div class="breadcrumbs">
-		<div class="breadcrumbs__container">
-			<ul class="breadcrumbs__list">
-				<li class="breadcrumbs__list-item">
-					<a href="./main.html" class="breadcrumbs__link">Главная</a>
-				</li>
-				<li class="breadcrumbs__list-item">
-					<a href="./services-page.html" class="breadcrumbs__link">Услуги</a>
-				</li>
-			</ul>
+<main class="main popups-demo">
+	<ul>
+		<li>
+			<a style="padding: 20px; text-align: center; background: violet; margin-bottom: 10px;width:100%"
+				class="open-popup-js" href="#" data-id="succes">Успешная отправка</a>
+		</li>
+		<li>
+			<a style="padding: 20px; text-align: center; background: violet; margin-bottom: 10px;width:100%"
+				class="open-popup-js" href="#" data-id="order">Заявка</a>
+		</li>
+		<li>
+			<a style="padding: 20px; text-align: center; background: violet; margin-bottom: 10px;width:100%"
+				class="open-popup-js" href="#" data-id="director">Письмо Директору</a>
+		</li>
+		<li>
+			<a style="padding: 20px; text-align: center; background: violet; margin-bottom: 10px;width:100%"
+				class="open-popup-js" href="#" data-id="callback">Заказ Звонка</a>
+		</li>
+		<li>
+			<a style="padding: 20px; text-align: center; background: violet; margin-bottom: 10px;width:100%"
+				class="open-popup-js" href="#" data-id="offer">Комерческое предложение</a>
+		</li>
+	</ul>
+	<div class="popup">
+	<div class="popup__content succes" id="succes">
+		<button class="popup__close">
+			<img src="images/popup-close.svg" alt="close-btn">
+		</button>
+		<div class="popup-succes">
+			<div class="popup-succes__title popup__title">
+				Ваша заявка успешно отправлена
+			</div>
+			<p class="popup__text popup-succes__text">
+				Ожидайте, вскоре с Вами свяжутся наши специалисты
+			</p>
+			<img src="images/check-mark-circle-2.png" alt="" class="popup-succes__pic">
+			<button class="popup-succes__btn main-btn">
+				Ок, на главную
+			</button>
 		</div>
 	</div>
-	<div class="service-page__container">
-		<div class="page-title">
-			Услуги
-		</div>
-		<div class="service-page__cards">
-			<div class="service-page__card service-card">
-				<div class="service-card__pic">
-					<img src="images/service-pic-1.png" alt="#">
-				</div>
-				<div class="service-card__text">
-					<div class="service-card__title">
-						Производство воздуховодов
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
+	<div class="popup__content order-popup" id="order">
+		<button class="popup__close">
+			<img src="images/popup-close.svg" alt="close-btn">
+		</button>
+		<div class="popup-order">
+			<div class="popup-order__header">
+				<div class="popup-order__text">
+					<div class="popup-order__title popup__title">
+						Отправить заявку на продукцию
 					</div>
-					<p class="service-card__subtitle">
-						Вентиляция - это важнейшая часть комфорта в помещении. Однако, чтобы вентиляция работала эффективно,
-						необходимы правильно спроектированные и изготовленные воздуховоды. Воздуховоды - это конструктивный
-						элемент...
+					<p class="popup-order__text popup__text">
+						Запросить расчёт стоимости
 					</p>
-					<div class="service-card__arrow">
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
+					<p class="popup__text">Товар: Бобышка БП22-G1/2-50 Ст20 ТУ 4218-17416124-96</p>
+				</div>
+				<div class="popup-order__pic">
+					<img src="images/popup-order-pic.png" alt="#">
 				</div>
 			</div>
-			<div class="service-page__card service-card">
-				<div class="service-card__pic">
-					<img src="images/service-pic-2.png" alt="#">
+			<form>
+				<div class="form-contact__wrapper">
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Ваше имя</div>
+						<input type="text" placeholder="Как к Вам обращаться" class="form-contact__input" minlength="3" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Телефон</div>
+						<input type="tel" placeholder="+7" class="form-contact__input" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">e-mail</div>
+						<input type="email" placeholder="exemple@mail.ru" class="form-contact__input">
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label textarea-js">
+						<div class="form-contact__label-header">Сообщение</div>
+						<textarea class="form-contact__input textarea" placeholder="Введите текст" maxlength="100"></textarea>
+						<p class="length">
+							<span class="length-curent">0</span>
+							/
+							<span class="length-max">100</span>
+						</p>
+					</label>
 				</div>
-				<div class="service-card__text">
-					<div class="service-card__title">
-						Анкерные тяги под заказ
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
+				<div class="form-contact__action">
+					<div class="form-contact__action-wrap">
+						<!-- <label class="form-contact__action-label">
+							<input type="checkbox" name="privacy" required>
+							<span class="checkbox">
+								<img src="images/check.svg" alt="#">
+							</span>
+						</label> -->
+						<span class="privacy-text">Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и
+							<a href="#">политикой конфеденциальности</a></span>
 					</div>
-					<p class="service-card__subtitle">
-						Изготовления изделий по чертежам заказчика востребовано в мелком и крупном бизнесе. Предприятиям часто
-						приходится реализовывать необычные проекты, где необходимы нестандартные комплектующие.
-					</p>
-					<div class="service-card__arrow">
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
+					<button class="form-contact__submit main-btn">Отправить</button>
 				</div>
-			</div>
-			<div class="service-page__card service-card">
-				<div class="service-card__pic">
-					<img src="images/service-pic-3.png" alt="#">
-				</div>
-				<div class="service-card__text">
-					<div class="service-card__title">
-						Производство опор по чертежам
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
-					<p class="service-card__subtitle">
-						Вентиляция - это важнейшая часть комфорта в помещении. Однако, чтобы вентиляция работала эффективно,
-						необходимы правильно спроектированные и изготовленные воздуховоды. Воздуховоды - это конструктивный
-						элемент...
-					</p>
-					<div class="service-card__arrow">
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="service-page__card service-card">
-				<div class="service-card__pic">
-					<img src="images/service-pic-4.png" alt="#">
-				</div>
-				<div class="service-card__text">
-					<div class="service-card__title">
-						Изделия по чертежам заказчика
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
-					<p class="service-card__subtitle">
-						Изготовления изделий по чертежам заказчика востребовано в мелком и крупном бизнесе. Предприятиям часто
-						приходится реализовывать необычные проекты, где необходимы нестандартные комплектующие.
-					</p>
-					<div class="service-card__arrow">
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="service-page__card service-card">
-				<div class="service-card__pic">
-					<img src="images/service-pic-5.png" alt="#">
-				</div>
-				<div class="service-card__text">
-					<div class="service-card__title">
-						Производство дымоходов квадратного и круглого сечения
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
-					<p class="service-card__subtitle">
-						Вентиляция - это важнейшая часть комфорта в помещении. Однако, чтобы вентиляция работала эффективно,
-						необходимы правильно спроектированные и изготовленные воздуховоды. Воздуховоды - это конструктивный
-						элемент...
-					</p>
-					<div class="service-card__arrow">
-						<a href="#" class="product-card__arrow">
-							<svg>
-								<use xlink:href="images/svg/icons.svg#arrow-card"></use>
-							</svg>
-						</a>
-					</div>
-				</div>
-			</div>
+			</form>
 		</div>
 	</div>
+	<div class="popup__content director" id="director">
+		<button class="popup__close">
+			<img src="images/popup-close.svg" alt="close-btn">
+		</button>
+		<div class="popup-director">
+			<div class="popup-order__header">
+				<div class="popup-order__text">
+					<div class="popup-order__title popup__title">
+						Отправить сообщение директору
+					</div>
+					<p class="popup-order__text popup__text">
+						Я лично участвую в сложных ситуациях по сделкам , чтоб сделать нашу работу лучше. Укажите ваши контактные
+						данные, чтобы получить ответ.
+					</p>
+				</div>
+				<div class="popup-order__pic">
+					<img src="images/popup-director-pic.png" alt="#">
+				</div>
+			</div>
+			<form>
+				<div class="form-contact__wrapper">
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Ваше имя</div>
+						<input type="text" placeholder="Как к Вам обращаться" class="form-contact__input" minlength="3" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Телефон</div>
+						<input type="tel" placeholder="+7" class="form-contact__input" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">e-mail</div>
+						<input type="email" placeholder="exemple@mail.ru" class="form-contact__input">
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Организация</div>
+						<input type="text" placeholder="Введите название" class="form-contact__input" minlength="3" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label textarea-js">
+						<div class="form-contact__label-header">Сообщение</div>
+						<textarea class="form-contact__input textarea" placeholder="Введите текст" maxlength="100"></textarea>
+						<p class="length">
+							<span class="length-curent">0</span>
+							/
+							<span class="length-max">100</span>
+						</p>
+					</label>
+				</div>
+				<div class="form-contact__action">
+					<div class="form-contact__action-wrap">
+						<span class="privacy-text">Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и
+							<a href="#">политикой конфеденциальности</a></span>
+					</div>
+					<button class="form-contact__submit main-btn">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup__content callback" id="callback">
+		<button class="popup__close">
+			<img src="images/popup-close.svg" alt="close-btn">
+		</button>
+		<div class="popup-callback">
+			<div class="popup-callback__pic popup-order__pic">
+				<img src="images/popup-order-pic.png" alt="#">
+			</div>
+			<div class="popup-callback__title popup__title">
+				Менеджер компании перезвонит Вам<br>
+				в течение 10 минут,<br>
+				с 9:00 до 18:00 по будням
+			</div>
+			<form>
+				<div class="form-contact__wrapper">
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Ваше имя</div>
+						<input type="text" placeholder="Как к Вам обращаться" class="form-contact__input" minlength="3" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Телефон</div>
+						<input type="tel" placeholder="+7" class="form-contact__input" required>
+						<span class="error-text">error text</span>
+					</label>
+				</div>
+				<div class="form-contact__action">
+					<div class="form-contact__action-wrap">
+						<span class="privacy-text">Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и
+							<a href="#">политикой конфеденциальности</a></span>
+					</div>
+					<button class="form-contact__submit main-btn">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="popup__content offer" id="offer">
+		<button class="popup__close">
+			<img src="images/popup-close.svg" alt="close-btn">
+		</button>
+		<div class="popup-order popup-offer">
+			<div class="popup-order__header">
+				<div class="popup-order__text">
+					<div class="popup-order__title popup__title">
+						Оставить заявку на коммерческое предложение
+					</div>
+					<p class="popup-order__text popup__text">
+						Менеджеры компании ответят на Ваши вопросы и произведут расчет стоимости услуг, и подготовят коммерческое
+						предложение специально для Вас
+					</p>
+				</div>
+				<div class="popup-order__pic">
+					<img src="images/popup-order-pic.png" alt="#">
+				</div>
+			</div>
+			<form>
+				<div class="form-contact__wrapper">
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Ваше имя</div>
+						<input type="text" placeholder="Как к Вам обращаться" class="form-contact__input" minlength="3" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Организация</div>
+						<input type="text" placeholder="Введите название" class="form-contact__input" minlength="3" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">ИНН</div>
+						<input type="tel" placeholder="ххх ххх ххх" class="form-contact__input" required>
+						<span class="error-text">error text</span>
+					</label>
+
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Телефон</div>
+						<input type="tel" placeholder="+7" class="form-contact__input" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Добавочный номер</div>
+						<input type="tel" placeholder="Введите текст" class="form-contact__input" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">e-mail</div>
+						<input type="email" placeholder="exemple@mail.ru" class="form-contact__input">
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Интересующий товар/услуга</div>
+						<input type="text" placeholder="Введите текст" class="form-contact__input" minlength="3" required>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label">
+						<div class="form-contact__label-header">Прикрепить документ</div>
+						<input type="file" placeholder="+7" class="form-contact__input hidden-input" required="">
+						<div class="form-contact__input div">
+							<p class="file-name-js">Добавить файл</p>
+							<span>
+								<img src="images/attachment.svg" alt="#">
+							</span>
+						</div>
+						<span class="error-text">error text</span>
+					</label>
+					<label class="form-contact__label textarea-js">
+						<div class="form-contact__label-header">Сообщение</div>
+						<textarea class="form-contact__input textarea" placeholder="Введите текст" maxlength="100"></textarea>
+						<p class="length">
+							<span class="length-curent">0</span>
+							/
+							<span class="length-max">100</span>
+						</p>
+					</label>
+				</div>
+				<div class="form-contact__action">
+					<div class="form-contact__action-wrap">
+						<span class="privacy-text">Нажимая кнопку Вы соглашаетесь с обработкой персональных данных и
+							<a href="#">политикой конфеденциальности</a></span>
+					</div>
+					<button class="form-contact__submit main-btn">Отправить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
 </main>
 <footer class="footer">
 	<div class="footer__container">
