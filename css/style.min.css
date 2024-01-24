@@ -5541,6 +5541,151 @@ input[type=search]::-webkit-search-cancel-button {
   aspect-ratio: 1;
 }
 
+.order-form {
+  flex: 0 0 342px;
+  background-color: #f5f5fa;
+  padding: 40px 17px;
+  border-radius: 10px;
+}
+
+.order-form__title {
+  color: var(--black-color);
+  font-family: Manrope;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.48px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.order-form__subtitle {
+  color: var(--grey-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.news-one .news-article {
+  display: block;
+  background-color: #fff;
+  padding: 0;
+  margin-bottom: 170px;
+}
+
+.news-one .news-article__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  align-items: start;
+}
+
+.news-one .news-article__title {
+  color: #000a28;
+  font-family: Manrope;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+.news-one .news-article__left {
+  flex: 1 1;
+}
+
+.news-one .news-article__pictures {
+  display: flex;
+  gap: 27px;
+  overflow-x: scroll;
+  margin-bottom: 73px;
+}
+
+.news-one .news-article__pictures img {
+  max-width: 100%;
+}
+
+.news-one .news-article__subtitle {
+  color: var(--grey-color);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.news-one .news-article__list {
+  font-family: Onest;
+  color: var(--grey-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: 55px;
+}
+
+.news-one .news-article__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.news-one .news-article__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.news-one .news-article__item::before {
+  content: "";
+  display: block;
+  flex: 0 0 9px;
+  aspect-ratio: 1;
+  background-color: #fe6a2d;
+  border-radius: 100%;
+}
+
+.news-one .news-article__numlist {
+  counter-reset: hs 0;
+}
+
+.news-one .news-article__numitem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.news-one .news-article__numitem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.news-one .news-article__numitem span {
+  counter-increment: hs 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  flex: 0 0 18px;
+  height: 18px;
+  background-color: #fe6a2d;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.news-one .news-article__numitem span::before {
+  content: counter(hs);
+}
+
+.news-one .order-form .form-contact__action {
+  flex-wrap: wrap;
+}
+
+.news-one .order-form .form-contact__submit {
+  width: 100%;
+  font-size: 14px;
+}
+
+.news-one-pic {
+  margin-bottom: 56px;
+  max-width: 100%;
+}
+
 @media screen and (min-width: 640px) {
   .news__items .swiper-slide {
     width: initial;
@@ -5933,6 +6078,14 @@ input[type=search]::-webkit-search-cancel-button {
   .news-list {
     margin-bottom: calc(70px + 30 * ((100vw - 320px) /1120));
   }
+
+  .news-one .news-article {
+    margin-bottom: calc(50px + 120 * ((100vw - 320px) /1120));
+  }
+
+  .news-one .news-article__title {
+    font-size: calc(26px + 14 * ((100vw - 320px) /1120));
+  }
 }
 
 @media screen and (max-width: 1360px) {
@@ -6084,6 +6237,14 @@ input[type=search]::-webkit-search-cancel-button {
 
   .service-card__text {
     padding-top: 0;
+  }
+
+  .news-one .news-article__wrapper {
+    display: block;
+  }
+
+  .news-one .news-article__left {
+    margin-bottom: 50px;
   }
 }
 
@@ -7481,6 +7642,28 @@ input[type=search]::-webkit-search-cancel-button {
     width: 22px;
     height: 22px;
   }
+
+  .order-form {
+    padding: 25px 8px;
+    margin: 0 -15px;
+  }
+
+  .news-one .news-article__pictures {
+    margin-bottom: 50px;
+    gap: 13px;
+  }
+
+  .news-one .news-article__pictures img {
+    height: 161px;
+  }
+
+  .news-one .news-article__list {
+    margin-bottom: 40px;
+  }
+
+  .news-one-pic {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) and (max-width: 1440px) {
@@ -7844,6 +8027,12 @@ input[type=search]::-webkit-search-cancel-button {
 
   .counter__count {
     flex: 1 1 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .news-one-pic {
+    height: 115px;
   }
 }
 
