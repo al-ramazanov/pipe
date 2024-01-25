@@ -3809,6 +3809,12 @@ body.lock {
   margin-bottom: 4px;
 }
 
+.form-contact__label-header.required::after {
+  content: "*";
+  color: #fc4738;
+  margin-left: 5px;
+}
+
 .form-contact__label .error-text {
   opacity: 0;
   transition: 0.3s ease;
