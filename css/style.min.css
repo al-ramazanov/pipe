@@ -5301,6 +5301,7 @@ body.lock {
   padding: 20px;
   border-radius: 25px;
   background-color: #f5f5fa;
+  cursor: pointer;
 }
 
 .service-card__pic {
@@ -5392,6 +5393,7 @@ body.lock {
   padding: 26px 32px 43px 26px;
   border-radius: 25px;
   background-color: #f5f5fa;
+  cursor: pointer;
 }
 
 .news-article__pic {
@@ -5765,6 +5767,7 @@ body.lock {
 
 .popup-succes {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -8588,6 +8591,22 @@ body.lock {
 
   .contacts-details__copy-btn:hover::before {
     opacity: 1;
+  }
+
+  .service-card:hover .product-card__arrow {
+    opacity: 0.8;
+  }
+
+  .service-card:hover .product-card__arrow svg {
+    animation: bounceIn 0.5s forwards;
+  }
+
+  .news-article:hover .product-card__arrow {
+    opacity: 0.8;
+  }
+
+  .news-article:hover .product-card__arrow svg {
+    animation: bounceIn 0.5s forwards;
   }
 }
 
