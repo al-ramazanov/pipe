@@ -7866,10 +7866,15 @@ body.lock {
   .news-one .news-article__pictures {
     margin-bottom: 50px;
     gap: 13px;
+    overflow: auto;
   }
 
   .news-one .news-article__pictures img {
     height: 161px;
+  }
+
+  .news-one .news-article__img {
+    flex-shrink: 0;
   }
 
   .news-one .news-article__list {
