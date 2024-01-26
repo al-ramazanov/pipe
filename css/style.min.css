@@ -7982,6 +7982,14 @@ body.lock {
     width: 100px;
     height: 100px;
   }
+
+  .about-page .section-header .hidden {
+    display: none;
+  }
+
+  .about-page .contacts__map {
+    height: calc(170px + 230 * (100vw - 320px) / 1120);
+  }
 }
 
 @media screen and (max-width: 768px) and (max-width: 1440px) {
