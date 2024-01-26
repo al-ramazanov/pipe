@@ -5924,6 +5924,34 @@ body.lock {
   flex: 1 0 47%;
 }
 
+.about-page .about {
+  margin-bottom: 0;
+}
+
+.about-page .product-tabs__content {
+  display: block;
+  margin-bottom: 80px;
+}
+
+.about-page .section-header {
+  position: relative;
+}
+
+.about-page .section-header__link {
+  display: none;
+}
+
+.about-page .section-header .hidden {
+  display: block;
+  right: -11px;
+  bottom: -23px;
+}
+
+.about-page .contacts__map {
+  margin-bottom: 80px;
+  height: 500px;
+}
+
 @media screen and (min-width: 640px) {
   .news__items .swiper-slide {
     width: initial;
