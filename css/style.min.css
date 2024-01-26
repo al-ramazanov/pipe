@@ -5889,6 +5889,37 @@ body.lock {
   margin-bottom: 34px;
 }
 
+.popup-offer {
+  padding-bottom: 0;
+}
+
+.popup-offer .popup-order__header {
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+.popup-offer .popup-order__title {
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.popup-offer .popup-order__text {
+  max-width: initial;
+}
+
+.popup-offer .popup-order__text p {
+  display: none;
+}
+
+.popup-offer .popup-order__pic {
+  display: none;
+}
+
+.popup-offer .form-contact__wrapper {
+  row-gap: 10px;
+  margin-bottom: 30px;
+}
+
 .popup-offer .form-contact__label {
   flex: 1 0 47%;
 }
